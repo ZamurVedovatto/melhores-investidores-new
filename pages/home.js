@@ -10,7 +10,6 @@ const Home = () => {
       <div className="jl_home_section">
         <div className="container" style={{clear: "both", paddingTop: "50px", paddingBottom: "0px" }}>
           <HeroSection />
-          {/* <SpotlightSection /> */}
           <LatestArticles />
         </div>
       </div>

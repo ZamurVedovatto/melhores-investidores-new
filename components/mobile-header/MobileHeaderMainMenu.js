@@ -19,7 +19,7 @@ const MobileHeaderMainMenu = () => {
         </ul>
       </li>
       <li className="menu-item">
-        <a href="gaming.html">Artigos<span className="border-menu"></span></a>
+        <a href="gaming.html">Categoria<span className="border-menu"></span></a>
       </li>
     </ul>
   )

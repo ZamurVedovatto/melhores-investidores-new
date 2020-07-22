@@ -53,7 +53,7 @@ const LatestArticles = () => {
                   <a href="index-9.html#" className="link_image featured-thumbnail" title="Every photographer needs to shoot this photo">
                     <img width="780" height="450" src="/img/780x450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
                     <div className="background_over_image"></div>
-                  </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#6b34ba" }} href="index-9.html#">Gaming</a></span>  <span className="jl_post_type_icon"><i className="la la-volume-up"></i></span> 
+                  </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#6b34ba" }} href="index-9.html#">Categoria</a></span>  <span className="jl_post_type_icon"><i className="la la-volume-up"></i></span> 
                 </div>
                 <div className="post-entry-content">
                   <div className="post-entry-content-wrapper">
@@ -148,7 +148,7 @@ const LatestArticles = () => {
                   <a href="index-9.html#" className="link_image featured-thumbnail" title="We are best friends and we been every where">
                     <img width="780" height="450" src="/img/780x450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
                     <div className="background_over_image"></div>
-                  </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#6b34ba" }} href="index-9.html#">Gaming</a></span> 
+                  </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#6b34ba" }} href="index-9.html#">Categoria</a></span> 
                 </div>
                 <div className="post-entry-content">
                   <div className="post-entry-content-wrapper">

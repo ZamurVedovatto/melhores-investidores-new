@@ -1,6 +1,7 @@
 import HeaderTopBar from './HeaderTopBar';
 import HeaderMainMenu from './HeaderMainMenu';
 import HeaderSecondaryMenu from './HeaderSecondaryMenu';
+import Link from 'next/Link';
 
 const MainHeader = () => {
   return (
@@ -82,7 +83,10 @@ const MainHeader = () => {
                                     </li>
                                  </ul>
                               </li>
-                              <li className="menu-item"><a href="gaming.html">Gaming<span className="border-menu"></span></a>
+                              <li className="menu-item">
+                                <Link href="categoria">
+                                  <a>Categoria<span className="border-menu"></span></a>
+                                </Link>
                               </li>
                               <li className="menu-item"><a href="active.html">Active<span className="border-menu"></span></a>
                               </li>
