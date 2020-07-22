@@ -3433,7 +3433,7 @@ header grid 3 post header
     line-height: 51px;
 }
 .headcus5_custom.header_layout_style5_custom .header_main_wrapper {
-    padding: 40px 0px;
+    padding: 1.2rem 0;
     background: #000;
 }
 .headcus5_custom.header_layout_style5_custom #mainmenu > li > a {

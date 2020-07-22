@@ -7,13 +7,13 @@ import LatestArticles from "./../components/home/LatestArticles";
 const Home = () => {
   return (
     <section className="section-home">
-      <HeroSection />      
       <div className="jl_home_section">
-          <div className="container">
-            <SpotlightSection />
-            <LatestArticles />
-          </div>
+        <div className="container" style={{clear: "both", paddingTop: "50px", paddingBottom: "0px" }}>
+          <HeroSection />
+          {/* <SpotlightSection /> */}
+          <LatestArticles />
         </div>
+      </div>
     </section>
   )
 }
