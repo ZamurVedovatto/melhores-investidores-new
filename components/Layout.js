@@ -1,7 +1,7 @@
 import './../styles/General.scss'
 import Nav from './Nav';
-import Footer from './Footer';
 import Head from 'next/head';
+import MainFooter from './footer/MainFooter';
 
 const Layout = (props) => {
   return (
@@ -10,7 +10,7 @@ const Layout = (props) => {
         <div className="options_layout_container full_layout_enable_front">
         <Nav />
         { props.children }
-        <Footer />
+        <MainFooter />
         </div>
       </div>
       <div id="go-top">
