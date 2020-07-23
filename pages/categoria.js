@@ -21,6 +21,9 @@ const Categoria = () => {
             </div>
           </div>
         </div>
+        <div style={{ padding: '2rem', textAlign: 'center', width: '100%' }}>
+          conteudo aqui
+        </div>
       </section>
     </Layout>
   )
