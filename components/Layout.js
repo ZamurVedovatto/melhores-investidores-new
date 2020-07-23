@@ -33,7 +33,7 @@ const Layout = (props) => {
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
 
-        <title>Melhores Investidores - Investimento certo</title>
+        <title>Melhores Investidores</title>
       </Head>
       <section className="mobile_nav_class jl-has-sidebar">
         <div className="options_layout_wrapper jl_radius jl_none_box_styles jl_border_radiuss">

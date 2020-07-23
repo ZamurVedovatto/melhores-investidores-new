@@ -1,7 +1,6 @@
 import HeaderTopBar from './HeaderTopBar';
 import HeaderMainMenu from './HeaderMainMenu';
-import HeaderSecondaryMenu from './HeaderSecondaryMenu';
-import Link from 'next/Link';
+
 
 const MainHeader = () => {
   return (

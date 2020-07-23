@@ -1,25 +1,11 @@
 import './../styles/Nav.scss';
-import Link from 'next/Link';
 import { Fragment } from 'react';
 import MainHeader from './header/MainHeader';
-import MobileHeader from './mobile-header/MobileHeader';
 
 const Nav = () => {
    return(
-    // <div className="navbar">
-    //   <Link href="/">
-    //     <span className="link">Home</span>
-    //   </Link>
-    //   <Link href="/about">
-    //     <span className="link">About</span>
-    //   </Link>
-    // </div>
-
    <Fragment>
       <MainHeader />
-      <MobileHeader />
-
-
       <div className="search_form_menu_personal">
          <div className="menu_mobile_large_close"><span className="jl_close_wapper search_form_menu_personal_click"><span className="jl_close_1"></span><span className="jl_close_2"></span></span>
          </div>

@@ -16,7 +16,7 @@ const HeroSection = () => {
                             <div className="wrap_box_style_main image-post-title">
                               <h3 className="image-post-title"><a href="index-9.html#">
                 Creative photography ideas from smart devices</a></h3>
-                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Anna Nikova" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Anna Nikova" rel="author">Anna Nikova</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
+                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
                             </div>
                           </div>
                         </div>
@@ -26,7 +26,7 @@ const HeroSection = () => {
                             <div className="wrap_box_style_main image-post-title">
                               <h3 className="image-post-title"><a href="index-9.html#">
                 Have good food taste then enjoy reading</a></h3>
-                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Anna Nikova" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Anna Nikova" rel="author">Anna Nikova</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
+                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
                             </div>
                           </div>
                         </div>
@@ -36,7 +36,7 @@ const HeroSection = () => {
                             <div className="wrap_box_style_main image-post-title">
                               <h3 className="image-post-title"><a href="index-9.html#">
                 It really have good feeling when you enjoy nature</a></h3>
-                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Anna Nikova" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Anna Nikova" rel="author">Anna Nikova</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
+                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
                             </div>
                           </div>
                         </div>
@@ -46,7 +46,7 @@ const HeroSection = () => {
                             <div className="wrap_box_style_main image-post-title">
                               <h3 className="image-post-title"><a href="index-9.html#">
                 the best place to celebrate birthday and swim</a></h3>
-                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Anna Nikova" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Anna Nikova" rel="author">Anna Nikova</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
+                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
                             </div>
                           </div>
                         </div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                             <div className="wrap_box_style_main image-post-title">
                               <h3 className="image-post-title"><a href="index-9.html#">
                 The most popular photoshop styles of the year</a></h3>
-                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Anna Nikova" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Anna Nikova" rel="author">Anna Nikova</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
+                              <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/dko.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 23, 2016</span></span>
                             </div>
                           </div>
                         </div>
@@ -71,8 +71,6 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-
-
   )
 }
 

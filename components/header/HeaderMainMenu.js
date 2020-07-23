@@ -8,7 +8,7 @@ const HeaderMainMenu = () => {
           <div className="main_menu col-md-12">
             <div className="menu-primary-container navigation_wrapper">
               <ul id="mainmenu" className="jl_main_menu">
-                <li className="menu-item menu-item-has-children"> <a href="index-2.html#">Home<span className="border-menu"></span></a>
+                {/* <li className="menu-item menu-item-has-children"> <a href="index-2.html#">Home<span className="border-menu"></span></a>
                   <ul className="sub-menu">
                     <li className="menu-item"><a href="index.html">Home Demo 1<span className="border-menu"></span></a>
                     </li>
@@ -17,7 +17,7 @@ const HeaderMainMenu = () => {
                     <li className="menu-item"><a href="index-2.html">Home Demo 3<span className="border-menu"></span></a>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <Link href="/categoria">
                   <li className="menu-item">
                     <a>Categoria<span className="border-menu"></span></a>
@@ -28,11 +28,18 @@ const HeaderMainMenu = () => {
                     <a>Post Layout<span className="border-menu"></span></a>
                   </li>
                 </Link>
-                <li className="menu-item menu-item-has-children"> <a href="shop.html">Shop<span className="jl_menu_lb jl_lb_yellow">Now</span><span className="border-menu"></span></a>
+                <Link href="/postLayout">
+                  <li className="menu-item">
+                    <a>Artigos<span className="border-menu"></span></a>
+                  </li>
+                </Link>
+                <li className="menu-item menu-item-has-children"> <a href="shop.html">Para Aprender<span className="border-menu"></span></a>
                   <ul className="sub-menu">
-                    <li className="menu-item"><a href="myaccount.html">My account<span className="border-menu"></span></a>
+                    <li className="menu-item"><a href="#">Biografias<span className="border-menu"></span></a>
                     </li>
-                    <li className="menu-item"><a href="cart.html">Cart<span className="border-menu"></span></a>
+                    <li className="menu-item"><a href="#">Dicionário das Finanças<span className="border-menu"></span></a>
+                    </li>
+                    <li className="menu-item"><a href="#">Literatura<span className="border-menu"></span></a>
                     </li>
                   </ul>
                 </li>

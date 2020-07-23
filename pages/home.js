@@ -1,7 +1,6 @@
 import './../styles/Home.scss';
 
 import HeroSection from './../components/home/HeroSection';
-import SpotlightSection from './../components/home/SpotlightSection';
 import LatestArticles from "./../components/home/LatestArticles";
 
 const Home = () => {

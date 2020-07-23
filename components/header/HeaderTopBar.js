@@ -1,3 +1,5 @@
+import Link from 'next/Link';
+
 const HeaderTopBar = () => {
   return (
     <div className="header_main_wrapper header_style_cus5_opt">
@@ -7,16 +9,18 @@ const HeaderTopBar = () => {
           <div className="logo_position_wrapper">
             <div className="logo_position_table">
               <ul className="social_icon_header personal_header_layout">
-                <li><a className="facebook" href="index-2.html#" target="_blank"><i className="fa fa-facebook"></i></a>
+                <li><a className="google_plus" href="https://www.instagram.com/melhoresinvestidores/" target="_blank"><i className="fa fa-instagram"></i></a>
                 </li>
-                <li><a className="google_plus" href="index-2.html#" target="_blank"><i className="fa fa-google-plus"></i></a>
+                <li><a className="facebook" href="#" target="_blank"><i className="fa fa-facebook"></i></a>
                 </li>
-                <li><a className="behance" href="index-2.html#" target="_blank"><i className="fa fa-behance"></i></a>
+                <li><a className="behance" href="#" target="_blank"><i className="fa fa-tumblr"></i></a>
                 </li>
               </ul>
-              <a className="logo_link" href="index.html">
-                <img className="logo_black" src="/img/logo/mi07_cropped.png" alt="Just another WordPress site" />
-              </a>
+              <Link href="/">
+                <a className="logo_link" >
+                  <img className="logo_black" src="/img/logo/mi07_cropped.png" alt="Just another WordPress site" />
+                </a>              
+              </Link>
               <div className="jl_header_link_subscribe">
                 <div className="search_header_menu jl_menu_bottom">
                   <div className="menu_mobile_icons"><i className="fa fa-bars"></i>
