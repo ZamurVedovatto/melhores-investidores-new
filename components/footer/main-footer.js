@@ -1,5 +1,5 @@
-import FooterTop from './FooterTop';
-import FooterBottom from './FooterBottom';
+import FooterTop from './footer-top';
+import FooterBottom from './footer-bottom';
 
 const MainFooter = () => {
   return (

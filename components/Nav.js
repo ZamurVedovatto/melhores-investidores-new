@@ -1,10 +1,8 @@
-import './../styles/Nav.scss';
-import { Fragment } from 'react';
-import MainHeader from './header/MainHeader';
+import MainHeader from './header/main-header';
 
 const Nav = () => {
    return(
-   <Fragment>
+   <>
       <MainHeader />
       <div className="search_form_menu_personal">
          <div className="menu_mobile_large_close"><span className="jl_close_wapper search_form_menu_personal_click"><span className="jl_close_1"></span><span className="jl_close_2"></span></span>
@@ -16,7 +14,7 @@ const Nav = () => {
          </form>
       </div>
       <div className="mobile_menu_overlay"></div>
-   </Fragment>
+   </>
    )
 }
 

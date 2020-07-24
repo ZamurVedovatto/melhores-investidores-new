@@ -1,5 +1,5 @@
-import HeaderTopBar from './HeaderTopBar';
-import HeaderMainMenu from './HeaderMainMenu';
+import HeaderTopBar from './header-top-bar';
+import HeaderMainMenu from './header-main-menu';
 
 
 const MainHeader = () => {

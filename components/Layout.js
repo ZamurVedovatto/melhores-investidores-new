@@ -1,12 +1,11 @@
 import './../styles/General.scss'
-import Nav from './Nav';
+import Nav from './nav';
 import Head from 'next/head';
-import MainFooter from './footer/MainFooter';
-import { Fragment } from 'react';
+import MainFooter from './footer/main-footer';
 
 const Layout = (props) => {
   return (
-    <Fragment>
+    <>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -47,7 +46,7 @@ const Layout = (props) => {
           <a href="index.html#go-top"><i className="fa fa-angle-up"></i></a>
         </div>
       </section>
-    </Fragment>
+    </>
   )
 }
 

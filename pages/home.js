@@ -1,11 +1,11 @@
-import './../styles/Home.scss';
+import homeStyles from './home.module.scss';
 
-import HeroSection from './../components/home/HeroSection';
-import LatestArticles from "./../components/home/LatestArticles";
+import HeroSection from './../components/home/hero-section';
+import LatestArticles from "./../components/home/latest-articles";
 
 const Home = () => {
   return (
-    <section className="section-home">
+    <section className={homeStyles.sectionHome}>
       <div className="jl_home_section">
         <div className="container" style={{clear: "both", paddingTop: "50px", paddingBottom: "0px" }}>
           <HeroSection />

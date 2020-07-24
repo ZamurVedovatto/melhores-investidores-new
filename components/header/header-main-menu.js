@@ -23,12 +23,12 @@ const HeaderMainMenu = () => {
                     <a>Categoria<span className="border-menu"></span></a>
                   </li>
                 </Link>
-                <Link href="/postLayout">
+                <Link href="/post-layout">
                   <li className="menu-item">
                     <a>Post Layout<span className="border-menu"></span></a>
                   </li>
                 </Link>
-                <Link href="/postLayout">
+                <Link href="/pos-layout">
                   <li className="menu-item">
                     <a>Artigos<span className="border-menu"></span></a>
                   </li>

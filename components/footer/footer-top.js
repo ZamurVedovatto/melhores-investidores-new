@@ -1,6 +1,6 @@
-import FooterTopLeft from './FooterTopLeft';
-import FooterTopCenter from './FooterTopCenter';
-import FooterTopRight from './FooterTopRight';
+import FooterTopLeft from './footer-top-left';
+import FooterTopCenter from './footer-top-center';
+import FooterTopRight from './footer-top-right';
 
 const FooterTop = () => {
   return (
