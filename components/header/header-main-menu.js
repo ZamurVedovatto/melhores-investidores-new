@@ -28,7 +28,7 @@ const HeaderMainMenu = () => {
                     <a>Post Layout<span className="border-menu"></span></a>
                   </li>
                 </Link>
-                <Link href="/pos-layout">
+                <Link href="/post-layout">
                   <li className="menu-item">
                     <a>Artigos<span className="border-menu"></span></a>
                   </li>
