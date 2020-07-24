@@ -1,6 +1,5 @@
-import './../styles/General.scss';
-import { Fragment } from 'react';
-import Layout from '../components/Layout';
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/Layout';
 import fetch from 'isomorphic-unfetch';
 import Home from './home';
 
@@ -8,11 +7,12 @@ const Index = (props) => {
   const { posts } = props;
 
   return (
-    <Fragment>
-      <Layout>
-        <Home />
-      </Layout>
-    </Fragment>
+    <Layout>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <Home />
+    </Layout>
   )
 }
 

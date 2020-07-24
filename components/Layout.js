@@ -1,7 +1,8 @@
-import './../styles/General.scss'
 import Nav from './nav';
 import Head from 'next/head';
 import MainFooter from './footer/main-footer';
+
+export const siteTitle = 'Melhores Investidores'
 
 const Layout = (props) => {
   return (
