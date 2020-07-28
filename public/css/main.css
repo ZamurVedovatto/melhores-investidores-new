@@ -158,7 +158,6 @@ h6 a,
 .single_post_arrow_content #prepost,
 .single_post_arrow_content #nextpost {
 	font-weight: 600 !important;
-	text-transform: capitalize !important;
 	letter-spacing: -0.03em !important;
 }
 .footer_carousel .meta-comment,

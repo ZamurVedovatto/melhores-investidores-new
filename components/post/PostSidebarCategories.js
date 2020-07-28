@@ -12,7 +12,7 @@ class PostSidebarCategories extends Component {
             <div className="category_image_bg_image" style={{ backgroundImage: "url('/img/400x280.jpg')" }}><a className="category_image_link" id="category_color_3" href="post-layout-6.html#"><span className="jl_cm_overlay"><span className="jl_cm_name">Business</span><span className="jl_cm_count">10</span></span></a>
               <div className="category_image_bg_overlay" style={{ background: "#0015ff" }}></div>
             </div>
-            <div className="category_image_bg_image" style={{ backgroundImage: "url('/img/400x280.jpeg')" }}><a className="category_image_link" id="category_color_4" href="post-layout-6.html#"><span className="jl_cm_overlay"><span className="jl_cm_name">Empreendedorismo</span><span className="jl_cm_count">5</span></span></a>
+            <div className="category_image_bg_image" style={{ backgroundImage: "url('/img/400x280.jpg')" }}><a className="category_image_link" id="category_color_4" href="post-layout-6.html#"><span className="jl_cm_overlay"><span className="jl_cm_name">Empreendedorismo</span><span className="jl_cm_count">5</span></span></a>
               <div className="category_image_bg_overlay" style={{ background: "#d1783c" }}></div>
             </div>
           </div> <span className="jl_none_space"></span>
