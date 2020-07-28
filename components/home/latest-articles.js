@@ -18,7 +18,7 @@ const LatestArticles = () => {
                     <div className="large_post_content">
                       <h3 className="image-post-title"><a href="index-9.html#">
                               People are enjoy the job that they love</a></h3>
-                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
+                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon-zamur.png" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
                     </div>
                   </div>
                 </div>
@@ -37,7 +37,7 @@ const LatestArticles = () => {
                     <div className="large_post_content">
                       <h3 className="image-post-title"><a href="index-9.html#">
                               Every photographer needs to shoot this photo</a></h3>
-                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
+                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon-zamur.png" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
                     </div>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ const LatestArticles = () => {
                     <div className="large_post_content">
                       <h3 className="image-post-title"><a href="index-9.html#">
                               Have a good time with my friend and enjoyed</a></h3>
-                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
+                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon-zamur.png" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
                     </div>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const LatestArticles = () => {
                     <div className="large_post_content">
                       <h3 className="image-post-title"><a href="index-9.html#">
                               This is a great photo and nice for shooting</a></h3>
-                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon.jpg" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
+                      <span className="jl_post_meta"><span className="jl_author_img_w"><img src="/img/favicon-zamur.png" width="30" height="30" alt="Zamur" className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" /><a href="index-9.html#" title="Posts by Zamur" rel="author">Zamur</a></span><span className="post-date"><i className="fa fa-clock-o"></i>Dec 24, 2016</span></span>
                     </div>
                   </div>
                 </div>

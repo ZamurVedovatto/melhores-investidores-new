@@ -16222,7 +16222,7 @@ p.notfound_p_text {
     margin-bottom: 20px;
 }
 #wrapper_masonry,
-#content_main {
+.content_main {
     clear: both;
     padding-top: 50px;
     padding-bottom: 0px;
@@ -17592,7 +17592,7 @@ p.notfound_p_text {
 .single_post_entry_content .single_post_title_main {
     font-size: 40px;
     color: #000;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.125 !important;
