@@ -8,8 +8,8 @@ const FooterTop = () => {
       <div className="container">
         <div className="row">
           <FooterTopLeft />
-          <FooterTopCenter />
-          <FooterTopRight />
+          {/* <FooterTopCenter />
+          <FooterTopRight /> */}
         </div>
       </div>
     </div>

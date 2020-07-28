@@ -1,6 +1,6 @@
 const FooterTopLeft = () => {
   return (
-    <div className="col-md-4"> <span className="jl_none_space"></span>
+    <div className="col-12"> <span className="jl_none_space"></span>
       <div id="disto_about_us_widget-3" className="widget jellywp_about_us_widget">
         <div className="widget_jl_wrapper about_widget_content"> <span className="jl_none_space"></span>
             <div className="widget-title">
@@ -23,6 +23,11 @@ const FooterTopLeft = () => {
                   <li>
                     <a href="index.html#" className="behance" target="_blank">
                       <i className="fa fa-tumblr"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index.html#" className="google_plus" target="_blank">
+                      <i className="fa fa-youtube"></i>
                     </a>
                   </li>
                 </ul>
