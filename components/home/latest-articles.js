@@ -9,7 +9,7 @@ const LatestArticles = () => {
               <div className="post_grid_content_wrapper">
                 <div className="image-post-thumb">
                   <a href="index-9.html#" className="link_image featured-thumbnail" title="People are enjoy the job that they love">
-                    <img width="780" height="450" src="/img/780x450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
+                    <img width="780" height="450" src="https://picsum.photos/780/450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
                     <div className="background_over_image"></div>
                   </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#0015ff" }} href="index-9.html#">Business</a></span>  <span className="jl_post_type_icon"><i className="la la-camera"></i></span> 
                 </div>
@@ -28,7 +28,7 @@ const LatestArticles = () => {
               <div className="post_grid_content_wrapper">
                 <div className="image-post-thumb">
                   <a href="index-9.html#" className="link_image featured-thumbnail" title="Every photographer needs to shoot this photo">
-                    <img width="780" height="450" src="/img/780x450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
+                    <img width="780" height="450" src="https://picsum.photos/780/450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
                     <div className="background_over_image"></div>
                   </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#6b34ba" }} href="index-9.html#">Categoria</a></span>  <span className="jl_post_type_icon"><i className="la la-volume-up"></i></span> 
                 </div>
@@ -47,7 +47,7 @@ const LatestArticles = () => {
               <div className="post_grid_content_wrapper">
                 <div className="image-post-thumb">
                   <a href="index-9.html#" className="link_image featured-thumbnail" title="Have a good time with my friend and enjoyed">
-                    <img width="780" height="450" src="/img/780x450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
+                    <img width="780" height="450" src="https://picsum.photos/780/450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
                     <div className="background_over_image"></div>
                   </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#ed1c1c" }} href="index-9.html#">Active</a></span>  <span className="jl_post_type_icon"><i className="la la-quote-right"></i></span> 
                 </div>
@@ -66,7 +66,7 @@ const LatestArticles = () => {
               <div className="post_grid_content_wrapper">
                 <div className="image-post-thumb">
                   <a href="index-9.html#" className="link_image featured-thumbnail" title="This is a great photo and nice for shooting">
-                    <img width="780" height="450" src="/img/780x450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
+                    <img width="780" height="450" src="https://picsum.photos/780/450.jpg" className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
                     <div className="background_over_image"></div>
                   </a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#d66300" }} href="index-9.html#">Science</a></span> 
                 </div>
