@@ -33,6 +33,11 @@ const HeaderMainMenu = () => {
                     <a>Artigos<span className="border-menu"></span></a>
                   </li>
                 </Link>
+                <Link href="/dicionario-do-investidor">
+                  <li className="menu-item">
+                    <a>Dicionário do Investidor<span className="border-menu"></span></a>
+                  </li>
+                </Link>
                 <li className="menu-item menu-item-has-children"> <a href="shop.html">Para Aprender<span className="border-menu"></span></a>
                   <ul className="sub-menu">
                     <li className="menu-item"><a href="#">Biografias<span className="border-menu"></span></a>
