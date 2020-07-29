@@ -78,7 +78,7 @@ class DicionarioDoInvestidor extends Component {
                           onChange={(e) => {this.handleChange(e)}}
                         />
                       </form>
-                      <ul className="uk-list uk-list-divider">
+                      <ul className="uk-list">
                         {
                           termos.map((termo)  =>
                             <li>

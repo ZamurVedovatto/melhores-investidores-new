@@ -207,7 +207,7 @@ table {
     border-radius: 2px;
 }
 a:hover {
-    text-decoration: underline !important;
+    /* text-decoration: underline !important; */
 }
 p img {
     margin-bottom: 0px !important;
