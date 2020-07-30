@@ -45,7 +45,12 @@ const Layout = (props) => {
       </Head>
       <section className="mobile_nav_class jl-has-sidebar">
         <div className="options_layout_wrapper jl_radius jl_none_box_styles jl_border_radiuss">
-          <div className="options_layout_container full_layout_enable_front">
+          <div className="options_layout_container full_layout_enable_front" style={{
+            minHeight: "100vh",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between"
+          }}>
           <Nav />
           { props.children }
           <MainFooter />

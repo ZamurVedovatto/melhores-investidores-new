@@ -3,7 +3,7 @@
   max-width: 1170px;
   width: 100%;
   padding: 0 0 2rem;
-  max-height: 45vh;
+  // max-height: 45vh;
   height: 100%;
   // background-color: #020329;
   .dicionarioList {
@@ -22,8 +22,8 @@
 
     ul {
       direction: rtl;
-      height: 45vh;
-      max-height: 45vh;
+      height: 55vh;
+      max-height: 55vh;
       overflow-y: scroll;
 
       /* width */
@@ -68,16 +68,17 @@
     }
   }
   .dicionarioDefinicao {
-    height: 42vh;
-    max-height: 42vh;
+    height: 40vh;
+    max-height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    padding-left: 3rem;
     .definicaoTop {
       display: flex;
       flex-direction: column;
       span {        
-        line-height: 1.2;
+        line-height: 1.1;
         &.mainInfo {
           font-size: 1.4rem;
           margin-bottom: 1.25rem;

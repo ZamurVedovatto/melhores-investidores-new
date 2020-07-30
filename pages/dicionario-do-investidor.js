@@ -10,17 +10,26 @@ class DicionarioDoInvestidor extends Component {
     super();
     this.state = {
       termos: dicionario,
-      mainContent: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-      secondaryContent: [],
+      termoTitle: "Desmitificando todos os termos do mercado financeiro",
+      mainContent: "Selecione um termo ao lado",
+      secondaryContent: "",
       isLoading: false
     }
   }
 
-  handleClick(conteudo) {
-    let main = conteudo[0];
-    let secondary = conteudo.slice(1, conteudo.length);
+  getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  handleClick(termo) {
+    let title = termo.termo;
+    let main = termo.conteudo[0];
+    let secondary = termo.conteudo.slice(1, termo.conteudo.length);
 
     this.setState({
+      termoTitle: title,
       mainContent: main,
       secondaryContent: secondary
     })
@@ -58,7 +67,7 @@ class DicionarioDoInvestidor extends Component {
   }
 
   render() {
-    const { termos, mainContent, secondaryContent } = this.state;
+    const { termos, termoTitle, mainContent, secondaryContent } = this.state;
 
     return (
       <Layout>
@@ -72,7 +81,7 @@ class DicionarioDoInvestidor extends Component {
                 <div className="col-md-12">
                   <section className={`${dicionarioStyles.dicionarioWrapper} row`}>
                     <div className={`${dicionarioStyles.dicionarioList} col-md-6 `}>
-                      <form className="uk-search uk-search-default">
+                      <form className="uk-search uk-search-default" style={{ width: '100%' }}>
                         <span uk-search-icon="true"></span>
                         <input className="uk-search-input" type="search" placeholder="Buscar..."
                           onChange={(e) => {this.handleChange(e)}}
@@ -82,7 +91,7 @@ class DicionarioDoInvestidor extends Component {
                         {
                           termos.map((termo)  =>
                             <li>
-                              <a onClick={() => this.handleClick(termo.conteudo)}>
+                              <a onClick={() => this.handleClick(termo)}>
                                 {termo.termo}
                               </a>
                             </li>
@@ -92,6 +101,7 @@ class DicionarioDoInvestidor extends Component {
                     </div>
                     <div className={`${dicionarioStyles.dicionarioDefinicao} col-md-6`}>
                       <div className={`${dicionarioStyles.definicaoTop}`}>
+                        <h1>{termoTitle}</h1>
                         <span className={`${dicionarioStyles.mainInfo}`}>
                         {mainContent}
                         </span>
@@ -103,10 +113,10 @@ class DicionarioDoInvestidor extends Component {
                           )
                         }
                       </div>
-                      <div className={`${dicionarioStyles.definicaoLinks}`}>
+                      {/* <div className={`${dicionarioStyles.definicaoLinks}`}>
                         <button>artigos/como-criar-valor</button>
                         <button>artigos/como-criar-valor</button>
-                      </div>
+                      </div> */}
                     </div>
                   </section>
   
