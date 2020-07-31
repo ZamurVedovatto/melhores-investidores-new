@@ -1,12 +1,12 @@
 {
   "id": 2,
-  "title": "Outro post",
-  "url": "post-exemplo",
+  "title": "Quem é Warren Buffet? O Maior investidor de todos os tempos",
+  "url": "quem-e-warren-buffet-o-maior-investidor-de-todos-os-tempos",
   "imgMain": "/img/posts/1main.jpg",
   "imgSecondary": "/img/posts/1secondary.jpg",
-  "categories": ["insights", "empreendedorismo"],
+  "categories": ["biografia", "investimentos"],
   "author": "Zamur Vedovatto",
   "date": "08 de agosto de 2020",
-  "hashtags": ["inspiracional", "geração-de-valor"],
-  "related": [0, 2]
+  "hashtags": ["inspiracional", "geração-de-valor", "investidores"],
+  "related": [1, 3]
 }
