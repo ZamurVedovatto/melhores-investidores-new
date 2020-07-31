@@ -12,13 +12,15 @@ import PostAnchorLinks from '../../components/post/PostAnchorLinks'
 import PostSidebar from '../../components/post/PostSidebar'
 
 import data from "./../../lib/posts/1.json";
+import data2 from "./../../lib/posts/2.json";
 import ArticleCard from '../../components/article/ArticleCard';
 
 class ArtigoMain extends Component {
   constructor(props){
     super(props);
     this.state = {
-      info: {}
+      info: {},
+      info2: {}
     }
   }
 
@@ -28,12 +30,13 @@ class ArtigoMain extends Component {
 
   getInfo() {
     this.setState({
-      info: data
+      info: data,
+      info2: data2
     })
   }
     
   render() {
-    const { info } = this.state;
+    const { info, info2 } = this.state;
     console.log(info);
     return (
       <Layout>
@@ -47,13 +50,13 @@ class ArtigoMain extends Component {
                 <div className="jl_wrapper_cat">
                   <div id="content_masonry">
                     <ArticleCard info={info} />
+                    <ArticleCard info={info2} />
                     <ArticleCard info={info} />
+                    <ArticleCard info={info2} />
                     <ArticleCard info={info} />
+                    <ArticleCard info={info2} />
                     <ArticleCard info={info} />
-                    <ArticleCard info={info} />
-                    <ArticleCard info={info} />
-                    <ArticleCard info={info} />
-                    <ArticleCard info={info} />
+                    <ArticleCard info={info2} />
                   </div>
                 </div>
                 <nav className="jellywp_pagination">
