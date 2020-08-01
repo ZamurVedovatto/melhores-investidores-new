@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useState  } from 'react';
+import { Drawer } from 'antd';
 
 import artigoStyles from './artigos.module.scss';
 
@@ -15,10 +16,12 @@ import PostSidebar from '../../components/post/PostSidebar'
 import data from "./../../lib/posts/2.json";
 
 class PostExample extends Component {
+  
   constructor(props){
     super(props);
     this.state = {
-      info: {}
+      info: {},
+      drawerVisible: false
     }
   }
 
@@ -29,6 +32,19 @@ class PostExample extends Component {
   getInfo() {
     this.setState({
       info: data
+    })
+  }
+
+  showDrawer = (term) => {
+    console.log(term);
+    this.setState({
+      drawerVisible: true
+    })
+  }
+
+  onClose = () => {
+    this.setState({
+      drawerVisible: false
     })
   }
     
@@ -57,7 +73,7 @@ class PostExample extends Component {
                         Considerado um dos maiores investidores do mercado financeiro de todos os tempos e também uma das pessoas mais ricas do mundo.
                         </p>
                         <p>
-                        Grande parte do seu patrimônio vem da sua participação como presidente e principal acionista da Berkshire Hathaway, empresa que tem a história de crescimento aliada às estratégias utilizadas por Warren Buffett no decorrer das últimas cinco décadas.
+                        Grande parte do seu patrimônio vem da sua participação como presidente e principal <span className={`${artigoStyles.dictLink}`}>acionista</span> da Berkshire Hathaway, empresa que tem a história de crescimento aliada às estratégias utilizadas por Warren Buffett no decorrer das últimas cinco décadas.
                         </p>
                         <blockquote>
                           <p>Regra número um: nunca perca dinheiro. Regra número dois: nunca se esqueça da regra número um.</p>
@@ -163,6 +179,17 @@ class PostExample extends Component {
             </div>
           </div>
         </section>
+
+        <Drawer
+          title="Basic Drawer"
+          placement="bottom"
+          closable={false}
+          onClose={this.onClose}
+          >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
       </Layout>
     )
   }

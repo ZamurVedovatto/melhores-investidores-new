@@ -18,20 +18,20 @@ class ArticleRecentCard extends Component {
 
     return (
       <li>
-        <Link href={`artigos/${url}`} >
+        <Link href={url} >
           <a className="jl_small_format feature-image-link image_post featured-thumbnail" title={title}>
-            <img width="120" height="120" src={images[1]} className="attachment-disto_small_feature size-disto_small_feature wp-post-image" alt={title} />
+            <img width="120" height="120" src={images[0]} className="attachment-disto_small_feature size-disto_small_feature wp-post-image" alt={title} />
             <div className="background_over_image"></div>
           </a>
         </Link>
         <div className="item-details">
           <span className="meta-category-small">
-            <Link href={`artigos/${url}`} >
+            <Link href={url} >
               <a className="post-category-color-text" style={{ background: "#d800f9" }} href="post-layout-6.html#">{categories[0]}</a>
             </Link>
           </span> 
           <h3 className="feature-post-title">
-            <Link href={`artigos/${url}`} >
+            <Link href={url} >
               <a>{title}</a>
             </Link>
           </h3>
