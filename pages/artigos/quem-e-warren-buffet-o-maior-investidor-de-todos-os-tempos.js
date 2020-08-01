@@ -1,5 +1,6 @@
 import React, { Component, useState  } from 'react';
 import { Drawer } from 'antd';
+import { Popover, Button } from 'antd';
 
 import artigoStyles from './artigos.module.scss';
 
