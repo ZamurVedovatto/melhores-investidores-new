@@ -2,8 +2,10 @@
   "id": 2,
   "title": "Benjamin Graham: o criador do investimento em valor e mentor de Warren Buffett",
   "url": "benjamin-graham-o-criador-do-investimento-em-valor-e-mentor-de-warren-buffett",
-  "imgMain": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Benjamin-Graham-fundamental.jpg/250px-Benjamin-Graham-fundamental.jpg",
-  "imgSecondary": "https://portaleducando.com/wp-content/uploads/2019/05/o-investidor-inteligente-benjamin-graham.jpg",
+  "images": [
+    "/img/posts/3a.png",
+    "/img/posts/3b.jpg"
+  ],
   "categories": ["biografia", "investimentos"],
   "author": "Zamur Vedovatto",
   "date": "08 de agosto de 2020",

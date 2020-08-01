@@ -3,13 +3,13 @@ import React, { Component } from "react";
 class PostTopInfo extends Component {
   
   render() {
-    const { imgMain, categories, title, author, date } = this.props.info;
+    const { images, categories, title, author, date } = this.props.info;
 
     return (
       <div className="jl_single_style1">
         <div className="single_content_header jl_single_feature_above">
           <div className="image-post-thumb jlsingle-title-above">
-            <img width="1000" height="667" src={imgMain} className="attachment-disto_justify_feature size-disto_justify_feature wp-post-image" alt="" />
+            <img width="1000" height="667" src={images[0]} className="attachment-disto_justify_feature size-disto_justify_feature wp-post-image" alt="" />
           </div>
         </div>
         <div className="single_post_entry_content single_bellow_left_align">

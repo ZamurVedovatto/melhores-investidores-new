@@ -66,7 +66,7 @@ class PostExample extends Component {
                         <p className={`${artigoStyles.subtitle}`}>O investidor inteligente</p>
                         <p>Porém, sua maior obra seria lançada em 1949. O Investidor Inteligente é leitura fundamental para investidores do Value Investing. Nesta obra, Graham cunha o método onde deve-se analisar os balanços patrimoniais e o fluxo de caixa da empresa para saber se a sua ação estava cara ou barata.</p>
                         <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />
+                          <img className="wp-image-4861 alignleft" src={info.images[1]} alt="" width="338" height="423" />
                         </p>
                         <p>Estes princípios buscam evitar perdas e auxiliam o investidor a ter uma maior disciplina emocional.</p>
                         <p>Investindo em ações que possuem cotações menores que o seu valor intrínseco, ou seja, com maior margem de segurança, tendem a manter o investidor mais tranquilo do que aqueles que compraram ações nos topos pensando que aquele papel iria se valorizar ainda mais.</p>

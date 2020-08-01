@@ -73,7 +73,7 @@ class PostExample extends Component {
                         Para complementar a renda, pois recebia 5 centavos de dólar por semana dos pais, passou a entregar jornais e vender de tudo, desde chicletes a garrafas de Coca-Cola.
                         </p>
                         <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />Aos 11 anos de idade ele fez sua primeira aquisição na bolsa. Foram três ações da Cities Services (atual Citgo). Aos 13, fez sua primeira declaração de imposto de renda, recebendo 35 dólares de restituição. Ao final da sua adolescência, Buffett já acumulava um patrimônio de 9.800 dólares que, corrigidos para a data de hoje, equivale a nada mais, nada menos, do que 100 mil dólares. Incrível, não?</p>
+                          <img className="wp-image-4861 alignleft"  src={info.images[1]} alt="" width="338" height="423" />Aos 11 anos de idade ele fez sua primeira aquisição na bolsa. Foram três ações da Cities Services (atual Citgo). Aos 13, fez sua primeira declaração de imposto de renda, recebendo 35 dólares de restituição. Ao final da sua adolescência, Buffett já acumulava um patrimônio de 9.800 dólares que, corrigidos para a data de hoje, equivale a nada mais, nada menos, do que 100 mil dólares. Incrível, não?</p>
                         <p className={`${artigoStyles.subtitle}`}>
                         Aprendendo com os melhores
                         </p>
@@ -90,7 +90,7 @@ class PostExample extends Component {
                         <p>"Juros compostos são a força mais poderosa do universo". Frase amplamente utilizado por Buffett e de autoria atribuída a Albert Einstein. Buffett usa a estratégia do buy and hold. Tendo em vista as empresas bem caracterizadas em suas análises fundamentalistas, Buffet aproveita de períodos de baixa nos mercados para comprar papéis destas empresas.</p>
                         <p>Uma empresa centenária do setor têxtil, chamada Berkshire Hathaway, passava por dificuldades e estava sendo negociada a valores baixos no começo da década de 1960 e foi alvo dos investimentos de Buffett. Ele considerava que ela ainda poderia gerar lucro. Após certas desavenças com o presidente da empresa, Buffett passou a adquirir mais e mais ações da Berkshire Hathaway, até assumir o controle da empresa e demitir toda a diretoria.</p>
                         <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />
+                          <img className="wp-image-4861 alignleft"  src={info.images[2]} alt="" width="338" height="423" />
                         </p>
                         <p>Tendo o controle da empresa, passou a diversificar os negócios da empresa e entrou no setor de seguros, ramo em que tinha vasto conhecimento.Foi nesse momento que a Buffer Partnership foi encerrada e a Berkshire se converteu a uma holding.</p>
                         <p>Nos anos seguintes, Buffett aumenta o guarda-chuvas da holding e passou a investir mais e mais em grandes companhias, tais como bancos e financeiras como Wells Fargo, Goldman Sachs, JP Morgan Chase, Bank of America, Visa e Mastercard, empresas globais como a Coca-Cola, Johnson & Johnson, American Airlines e General Motors, entre outras.</p>

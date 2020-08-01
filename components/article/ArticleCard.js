@@ -14,7 +14,7 @@ class ArticleCard extends Component {
   }
       
   render() {
-    const { id, title, url, imgMain, imgSecondary, categories, author, date, hashtags, related } = this.state.info;
+    const { id, title, url, images, categories, author, date, hashtags, related } = this.state.info;
 
     return (
       <div className="box jl_grid_layout1 blog_grid_post_style post-4761 post type-post status-publish format-standard has-post-thumbnail hentry category-sports">
@@ -22,7 +22,7 @@ class ArticleCard extends Component {
           <div className="image-post-thumb">
             <Link href={`artigos/${url}`} >
               <a className="link_image featured-thumbnail" title={title}>
-                <img width="780" height="450" src={imgMain} className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
+                <img width="780" height="450" src={images[0]} className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
                 <div className="background_over_image"></div>
               </a>
             </Link>
