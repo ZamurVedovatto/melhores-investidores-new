@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import './../../styles/utils.module.scss'
+
+import artigoStyles from './artigos.module.scss';
 
 import Head from 'next/head';
 import Layout from '../../components/layout'
@@ -50,7 +50,7 @@ class PostExample extends Component {
     
                       {/* Conteudo aqui */}
                       <div className="post_content">
-                        <p className="font-weight-bold">
+                        <p className={`${artigoStyles.subtitle}`}>
                         Afinal, quem é Warren Buffett?
                         </p>
                         <p>
@@ -63,7 +63,7 @@ class PostExample extends Component {
                           <p>Regra número um: nunca perca dinheiro. Regra número dois: nunca se esqueça da regra número um.</p>
                         </blockquote>
                         <p>Para se ter uma idéia, as estratégias de investimento de Buffett na Berkshire Hathaway tem tido retorno médio de 20% ao ano, batendo (e com sobra), os índices S&P e Dow Jones.</p>
-                        <p className="font-weight-bold">
+                        <p className={`${artigoStyles.subtitle}`}>
                         Um pouco de história
                         </p>
                         <p>
@@ -74,7 +74,7 @@ class PostExample extends Component {
                         </p>
                         <p>
                           <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />Aos 11 anos de idade ele fez sua primeira aquisição na bolsa. Foram três ações da Cities Services (atual Citgo). Aos 13, fez sua primeira declaração de imposto de renda, recebendo 35 dólares de restituição. Ao final da sua adolescência, Buffett já acumulava um patrimônio de 9.800 dólares que, corrigidos para a data de hoje, equivale a nada mais, nada menos, do que 100 mil dólares. Incrível, não?</p>
-                        <p className="font-weight-bold">
+                        <p className={`${artigoStyles.subtitle}`}>
                         Aprendendo com os melhores
                         </p>
                         <p>Buffett formou-se em administração pela Universidade de Nebraska. Em uma reviravolta após ser negado por Harvard pela continuidade dos seus estudos, Warren escreveu para o economista e professor da Universidade de Columbia, David Dodd, e foi aprovado e aceito para fazer o seu mestrado. Foi nesse período que ele conheceu o pai do value investing, Benjamin Graham.</p>
@@ -84,12 +84,9 @@ class PostExample extends Component {
                         <blockquote>
                           <p>A diferença entre pessoas bem-sucedidas e pessoas realmente bem-sucedidas é que as realmente bem-sucedidas dizem não para quase tudo.</p>
                         </blockquote>
-                        <p className="font-weight-bold">Fundação da Buffett Partnership LTDA</p>
+                        <p className={`${artigoStyles.subtitle}`}>Fundação da Buffett Partnership LTDA</p>
                         <p>Junto a familiares e sócios e com um capital de aproximadamente 105 mil dólares, Buffet fundou o seu primeiro fundo de investimentos. Seis anos depois, a firma já valia mais de 7 milhões de dólares. Por mais de uma década, o retorno anual dos investimentos foi de 24,5%, superando em muito os 7,4% do mercado norte-americano.</p>
-                        <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />
-                        </p>
-                        <p className="font-weight-bold">Método de Investimento</p>
+                        <p className={`${artigoStyles.subtitle}`}>Método de Investimento</p>
                         <p>"Juros compostos são a força mais poderosa do universo". Frase amplamente utilizado por Buffett e de autoria atribuída a Albert Einstein. Buffett usa a estratégia do buy and hold. Tendo em vista as empresas bem caracterizadas em suas análises fundamentalistas, Buffet aproveita de períodos de baixa nos mercados para comprar papéis destas empresas.</p>
                         <p>Uma empresa centenária do setor têxtil, chamada Berkshire Hathaway, passava por dificuldades e estava sendo negociada a valores baixos no começo da década de 1960 e foi alvo dos investimentos de Buffett. Ele considerava que ela ainda poderia gerar lucro. Após certas desavenças com o presidente da empresa, Buffett passou a adquirir mais e mais ações da Berkshire Hathaway, até assumir o controle da empresa e demitir toda a diretoria.</p>
                         <p>
@@ -98,7 +95,7 @@ class PostExample extends Component {
                         <p>Tendo o controle da empresa, passou a diversificar os negócios da empresa e entrou no setor de seguros, ramo em que tinha vasto conhecimento.Foi nesse momento que a Buffer Partnership foi encerrada e a Berkshire se converteu a uma holding.</p>
                         <p>Nos anos seguintes, Buffett aumenta o guarda-chuvas da holding e passou a investir mais e mais em grandes companhias, tais como bancos e financeiras como Wells Fargo, Goldman Sachs, JP Morgan Chase, Bank of America, Visa e Mastercard, empresas globais como a Coca-Cola, Johnson & Johnson, American Airlines e General Motors, entre outras.</p>
                         <p>Atualmente, a Berkshire Hathaway possui um valor de mercado superior a 500 bilhões de dólares, ficando atrás somente da Microsoft, Apple, Amazon e Facebook.</p>
-                        <p className="font-weight-bold">Referências</p>
+                        <p className={`${artigoStyles.subtitle}`}>Referências</p>
                         <p>
                           <a href="https://comoinvestir.thecap.com.br/grandes-investidores-de-sucesso-bolsa/" target="_blank">The Cap</a>
                         </p>
@@ -106,10 +103,10 @@ class PostExample extends Component {
                           <a href="https://www.infomoney.com.br/perfil/warren-buffett/" target="_blank">Info Money</a>
                         </p>
 
-                        {/* <p className="font-weight-bold"></p>
-                        <p className="font-weight-bold"></p>
-                        <p className="font-weight-bold"></p>
-                        <p className="font-weight-bold"></p>
+                        {/* <p className={`${artigoStyles.subtitle}`}></p>
+                        <p className={`${artigoStyles.subtitle}`}></p>
+                        <p className={`${artigoStyles.subtitle}`}></p>
+                        <p className={`${artigoStyles.subtitle}`}></p>
                         <p></p>
                         <p></p>
                         <p></p>

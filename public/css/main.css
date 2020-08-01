@@ -116,7 +116,8 @@
 .content_single_page p,
 .single_section_content .post_content,
 .single_section_content .post_content p {
-	font-size: 16px !important;
+	line-height: 1.2;
+	font-size: 1.1rem;
 }
 body,
 p,

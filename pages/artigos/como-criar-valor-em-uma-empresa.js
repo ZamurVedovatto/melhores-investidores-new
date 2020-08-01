@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+
+import artigoStyles from './artigos.module.scss';
 
 import Head from 'next/head';
 import Layout from '../../components/layout'
@@ -50,10 +51,10 @@ class PostExample extends Component {
                       {/* Conteudo aqui */}
                       <div className="post_content">
                         <p>
-                        Quando se pensa em empreender, é preciso ter a resposta de três perguntas fundamentais para montar o seu modelo de negócios: O Quê, Por Quê e Como.
+                        Quando se pensa em empreender, é preciso ter a resposta de três perguntas fundamentais para montar o seu modelo de negócios: <span className="font-weight-bold">O quê, por quê e como</span>.
                         </p>
                         <p>
-                        O Quê é a etapa principal. Traz a definição do negócio, o propósito da empresa. É de fato o que o empreendedor quer levar aos seus clientes e quem serão esses clientes. Já as perguntas Por Quê e Como, são a base para a criação do valor de uma empresa, ou seja, são a identidade da marca.
+                        <span className="font-weight-bold">O Quê</span> é a etapa principal. Traz a definição do negócio, o propósito da empresa. É de fato o que o empreendedor quer levar aos seus clientes e quem serão esses clientes. Já as perguntas <span className="font-weight-bold">Por Quê e Como</span>, são a base para a criação do valor de uma empresa, ou seja, são a identidade da marca.
                         </p>
                         <p>
                         A resposta do "porquê fazemos o que fazemos" é a essência do negócio. É ter um posicionamento claro e firme do objetivo e é esse objetivo que vai definir a estratégia de crescimento e de valorização da marca. E o "como" essa estratégia se transformará em ação serão as leis que guiaram os colaboradores a atingirem o objetivo.
@@ -62,15 +63,15 @@ class PostExample extends Component {
                         <blockquote>
                           <p>Quando se pensa em empreender, é preciso ter a resposta de três perguntas fundamentais para montar o seu modelo de negócios: O Quê, Por Quê e Como.</p>
                         </blockquote>
-                        <p>1) Envolvimento dos colaboradores</p>
+                        <p className={`${artigoStyles.subtitle}`}>1) Envolvimento dos colaboradores</p>
                         <p>
                         Não é novidade que empregados motivados rendem muito mais. Mas não é apenas motivação, é transformar os funcionários em defensores da marca. Trata-se de engajar, desenvolver e reconhecer. É incentivar o colaborador a ter sentimento de dono, de trazer soluções e inovações alinhados aos Valores e propósitos da companhia. A Ambev, por exemplo, tem 10 princípios que norteiam os seus valores. Dos 10, 7 são diretamente relacionados aos seus colaborares e seus desempenhos.
                         </p>
-                        <p>2) Inovação</p>
+                        <p className={`${artigoStyles.subtitle}`}>2) Inovação</p>
                         <p>
                           <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />Inovação não precisa ser necessariamente um produto ou serviço novo, e sim a maneira como esse produto é oferecido ao cliente. Para isso, é necessário conhecer o consumidor, entender o mercado e com isso proporcionar uma nova experiência, objetivando conquistar e fidelizar o cliente. A Apple é um excelente exemplo. O IPod, Iphone e Ipad já eram produtos existentes no mercado, mas ainda não tinham atingido seu potencial máximo. Inovação, qualidade e excelência fazem parte dos valores da Apple.</p>
                         
-                        <p>3) Responsabilidade Social</p>
+                        <p className={`${artigoStyles.subtitle}`}>3) Responsabilidade Social</p>
                         <p>Significa que a empresa vai além do propósito de lucrar. Uma empresa que tem em seus valores Responsabilidade Social não se preocupa apenas com o seu desempenho e o de seus colaboradores. Ela também se preocupa com os seus clientes, fornecedores e meio ambiente. O mercado e os consumidores estão cada vez mais atentos ao consumo inteligente e a sustentabilidade. A responsabilidade social torna-se um fator decisivo não apenas para os clientes, mas também para os acionistas que irão investir na empresa.
                         </p>
                         <p>
