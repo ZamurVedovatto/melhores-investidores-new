@@ -86,9 +86,9 @@ class PostExample extends Component {
                         <PostHashs hashtags={info.hashtags} />
                         <PostShare related={info.related} />
                       </div>
-                      <PostRelateds  />
+                      {/* <PostRelateds  /> */}
                       <PostAuthor author={info.author} />
-                      <PostAnchorLinks />
+                      {/* <PostAnchorLinks /> */}
                     </div>
                   </div>
                 </div>

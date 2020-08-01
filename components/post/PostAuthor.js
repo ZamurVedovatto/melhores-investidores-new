@@ -12,7 +12,7 @@ class PostAuthor extends Component {
           </div>
           <div className="author-description">
             <h5><a href="post-layout-6.html#">Zamur Vedovatto</a></h5>
-            <p>welcome Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse vulputate porttitor condimentum.</p>
+            <p>Analista de Sistemas, empresário e apaixonado por empreendedorismo, negócios e investimentos, o autor produz conteúdo com o intuito de atiçar a capacidade do leitor de produzir insights e conhecimento.</p>
           </div>
         </div>
       </div>
