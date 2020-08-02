@@ -18,12 +18,12 @@ const HeaderMainMenu = () => {
                     </li>
                   </ul>
                 </li> */}
-                <Link href="/artigos">
+                {/* <Link href="/artigos">
                   <li className="menu-item">
                     <a>Biografias<span className="border-menu"></span>
                     </a>
                   </li>
-                </Link>
+                </Link> */}
                 <Link href="/artigos">
                   <li className="menu-item">
                     <a>Artigos<span className="border-menu"></span>
