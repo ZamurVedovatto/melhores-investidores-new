@@ -18,7 +18,7 @@ const HeaderMainMenu = () => {
                     </li>
                   </ul>
                 </li> */}
-                <Link href="/biografias">
+                <Link href="/artigos">
                   <li className="menu-item">
                     <a>Biografias<span className="border-menu"></span>
                     </a>

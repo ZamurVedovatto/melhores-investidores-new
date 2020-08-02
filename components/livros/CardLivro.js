@@ -1,33 +1,32 @@
 import React, { Component } from 'react';
-// import './CardLivro.scss';
+import cardLivroStyles from './CardLivro.module.scss';
 
 class CardLivro extends Component {
 
   render() {
     const { img, title, author, description, sections, link } = this.props.livro;
-    console.log(link)
 
     return(
-      <div className="cardlivro-wrapper uk-card uk-card-default">
-        <div className="cardlivro-content">
-          <div className="cardlivro-content-top">
+      <div className={`${cardLivroStyles.cardlivroWrapper}`}>
+        <div className={`${cardLivroStyles.cardlivroContent}`}>
+          <div className={`${cardLivroStyles.cardlivroContentTop}`}>
             <img className="uk-border-rounded" src={img} alt="livro" />
+            <div className={`${cardLivroStyles.cta}`}>
+              <a href={link} target="_blank" rel="noopener noreferrer" className={`${cardLivroStyles.livroCta} uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom`}>Saiba mais</a>
+            </div>
           </div>
-          <div className="cardlivro-content-bottom">
-            <div className="right-top">
-              <span className="livro-title">{title}</span>
-              <span className="livro-author">{author}</span>
-              <div className="livro-stars">
+          <div className={`${cardLivroStyles.cardlivroContentBottom}`}>
+            <div className={`${cardLivroStyles.rightTop}`}>
+              <span className={`${cardLivroStyles.livroTitle}`}>{title}</span>
+              <span className={`${cardLivroStyles.livroAuthor}`}>{author}</span>
+              <div className={`${cardLivroStyles.livroStars}`}>
                 {
                   sections.map((section) =>  <span key={section}>{section}</span>)
                 }
               </div>
             </div>
-            <div className="right-center">
-              <span className="livro-description">{description}</span>
-            </div>
-            <div className="right-bottom">
-              <a href={link} target="_blank" rel="noopener noreferrer" className="livro-cta uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Saiba mais</a>
+            <div className={`${cardLivroStyles.rightCenter}`}>
+              <span className={`${cardLivroStyles.livroDescription}`}>{description}</span>
             </div>
           </div>
         </div>

@@ -37,7 +37,6 @@ class PostExample extends Component {
   }
 
   showDrawer = (term) => {
-    console.log(term);
     this.setState({
       drawerVisible: true
     })

@@ -42,29 +42,13 @@ class LivrosMain extends Component {
     const { livros } = this.state;
     return(
       <div className="livrosintro-wrapper">
-        <div className="livrosintro-left uk-card uk-card-default">
-          <span className="livrosintro-description">
-          Leitura é atividade fundamental para nosso desenvolvimento. Além do mais, o crescimento intelectual precede o crescimento financeiro. Tomemos como exemplo as pessoas mais admiradas por serem intelectualmente brilhantes, em grande maioria, são leitores vorazes.
-          </span>
-          <div className="livrosintro-filter">
-            <ul className="livrosintro-filter-list uk-list">
-              <li onClick={this.filterData('investimentos')} >investimentos</li>
-              <li onClick={this.filterData('mindset')} >mindset</li>
-              <li onClick={this.filterData('empreendedorismo')} >empreendedorismo</li>
-            </ul>
+        {
+          livros.map((livro)  =>
+          <div className="col-sm-12 col-md-4 col-lg-3" key={livro.id}>
+            <CardLivro livro={livro} />
           </div>
-        </div>
-        <div className="livrosintro-content uk-card">
-          <ul className="uk-list">
-            {
-              livros.map((livro)  =>
-              <li key={livro.id}>
-                <CardLivro livro={livro} />
-              </li>
-              )
-            }
-          </ul>
-        </div>
+          )
+        }
       </div>
     );
   }

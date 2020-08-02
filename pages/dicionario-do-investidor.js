@@ -45,8 +45,6 @@ class DicionarioDoInvestidor extends Component {
   }
 
   filterTermos = (termoFilter) => {
-    console.log(termoFilter);
-
     if (termoFilter !== '') {
       let filteredTermos = this.state.termos.filter((termoLoop) => {
         let termoName = this.normalizeText(termoLoop.termo);
