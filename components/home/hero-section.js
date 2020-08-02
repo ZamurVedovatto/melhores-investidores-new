@@ -51,7 +51,7 @@ const HeroSection = () => {
                           </div>
                         </div>
                         <div className="jl_grid5_item jl_grid5small jl_grid5">
-                          <div className="jl_grid5_itemin"> <span className="image_grid_header_absolute" style={{ backgroundOmage: "url('https://picsum.photos/811/520.jpg')" }}></span>
+                          <div className="jl_grid5_itemin"> <span className="image_grid_header_absolute" style={{ backgroundOmage: "url('https://picsum.photos/780/450.jpg')" }}></span>
                             <a href="index-9.html#" className="link_grid_header_absolute" title="The most popular photoshop styles of the year"></a> <span className="meta-category-small"><a className="post-category-color-text" style={{ background: "#7fbc1e" }} href="index-9.html#">Health</a></span>  <span className="jl_post_type_icon"><i className="la la-camera"></i></span> 
                             <div className="wrap_box_style_main image-post-title">
                               <h3 className="image-post-title"><a href="index-9.html#">

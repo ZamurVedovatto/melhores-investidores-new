@@ -1180,7 +1180,7 @@ main grid 5 post
     padding-left: 7px;
 }
 .jl_grid5_wrapper .jl_grid5_item.jl_grid5main {
-    width: 44%;
+    width: 50%;
 }
 .jl_grid5_wrapper .jl_grid5_item.jl_grid5main .jl_grid5_itemin {
     height: 514px;
@@ -1209,7 +1209,7 @@ main grid 5 post
     font-size: 25px;
 }
 .jl_grid5_wrapper .jl_grid5_item.jl_grid5small {
-    width: 28%;
+    width: 25%;
     margin-bottom: 14px;
 }
 .jl_grid5_wrapper .jl_grid5_item.jl_grid5small .jl_grid5_itemin {

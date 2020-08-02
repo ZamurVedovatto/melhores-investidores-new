@@ -71,7 +71,7 @@ $('.menu_mobile_icons, .mobile_menu_overlay').on("click", function() {
         $('.mobile_nav_class').toggleClass('active_mobile_nav_class');
 });
 
-$("#mobile_menu_slide .menu-item-has-children > a").append($("<span/>",{class:'arrow_down'}).html('<i class="la la-angle-down" aria-hidden="true"></i>')); 
+$("#mobile_menu_slide .menu-item-has-children > a").append($("<span/>",{class:'arrow_down'}).html('<i className="la la-angle-down" aria-hidden="true"></i>')); 
 $('#mobile_menu_slide .arrow_down i').on("click",  function() {
             var $submenu = $(this).closest('.menu-item-has-children').find(' > .sub-menu');
             $(this).toggleClass("la la-angle-down").toggleClass("la la-angle-up");
@@ -107,7 +107,7 @@ $('.search_form_menu_click').on('click', function ( e ) {
             $('.sb-toggle-left').on("click",  function(){
                 $('#nav-wrapper').toggle(100);
             } ); 
-            $("#menu-main-menu .menu-item-has-children > a").append($("<span/>",{class:'arrow_down'}).html('<i class="la la-angle-down"></i>'));     
+            $("#menu-main-menu .menu-item-has-children > a").append($("<span/>",{class:'arrow_down'}).html('<i className="la la-angle-down"></i>'));     
         }
         
         $('#nav-wrapper .menu .arrow_down').on("click",  function() {
@@ -255,8 +255,8 @@ if(tagrtl){var rtl_options = true;}else{var rtl_options = false;}
     pauseOnHover: true,
     adaptiveHeight: true,
     fade: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 1,
     slidesToScroll: 1
   });
@@ -312,8 +312,8 @@ $('.jl_builder_1carousel').slick({
     autoplay: true,
     pauseOnHover: true,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
@@ -350,8 +350,8 @@ $('.jl_builder_2carousel').slick({
     autoplay: true,
     pauseOnHover: true,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
@@ -389,8 +389,8 @@ $('.jl_builder_3carousel').slick({
     autoplay: true,
     pauseOnHover: true,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
@@ -428,8 +428,8 @@ $('.jl_builder_4carousel').slick({
     autoplay: true,
     pauseOnHover: true,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 4,
     slidesToScroll: 2,
     responsive: [
@@ -467,8 +467,8 @@ $('.jl_builder_5carousel').slick({
     autoplay: true,
     pauseOnHover: true,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 5,
     slidesToScroll: 2,
     responsive: [
@@ -506,8 +506,8 @@ $('.jl_builder_6carousel').slick({
     autoplay: true,
     pauseOnHover: true,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 6,
     slidesToScroll: 3,
     responsive: [
@@ -547,8 +547,8 @@ $('.single-item-slider, .full-slider-main-home, .slider_widget_post').slick({
     autoplay: true,
     pauseOnHover: true,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 1,
     slidesToScroll: 1
   });
@@ -628,8 +628,8 @@ $('.home_slider_header_tab_nav').slick({
     autoplay: true,
     pauseOnHover: false,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i>Prev</div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right">Next<i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i>Prev</div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right">Next<i className="la la-angle-right"></i></div>',
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -645,8 +645,8 @@ $('.home_slider_header_tab_nav').slick({
     autoplay: true,
     pauseOnHover: false,
     adaptiveHeight: true,
-    prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-    nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+    prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+    nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -665,8 +665,8 @@ $('.large_center_mode_slider').slick({
   adaptiveHeight: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  prevArrow:'<div class="jelly_pro_post_arrow_left"><i class="la la-angle-left"></i></div>',
-  nextArrow:'<div class="jelly_pro_post_arrow_right"><i class="la la-angle-right"></i></div>',
+  prevArrow:'<div className="jelly_pro_post_arrow_left"><i className="la la-angle-left"></i></div>',
+  nextArrow:'<div className="jelly_pro_post_arrow_right"><i className="la la-angle-right"></i></div>',
   responsive: [
   {
       breakpoint: 1300,
