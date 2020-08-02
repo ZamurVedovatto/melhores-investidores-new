@@ -14768,10 +14768,10 @@ Menu slide
     display: none;
     box-shadow: none;
 }
-.mobile_menu_active.mobile_menu_overlay {
+/* .mobile_menu_active.mobile_menu_overlay {
     visibility: visible;
     background: rgba(0, 0, 0, 0.9);
-}
+} */
 .mobile_menu_overlay {
     display: block;
     width: 100%;

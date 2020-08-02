@@ -18,18 +18,31 @@ const HeaderMainMenu = () => {
                     </li>
                   </ul>
                 </li> */}
-
+                <Link href="/biografias">
+                  <li className="menu-item">
+                    <a>Biografias<span className="border-menu"></span>
+                    </a>
+                  </li>
+                </Link>
                 <Link href="/artigos">
                   <li className="menu-item">
-                    <a>Artigos<span className="border-menu"></span></a>
+                    <a>Artigos<span className="border-menu"></span>
+                    </a>
                   </li>
                 </Link>
                 <Link href="/dicionario-do-investidor">
                   <li className="menu-item">
-                    <a>Dicionário do Investidor<span className="border-menu"></span></a>
+                    <a>Dicionário do Investidor<span className="border-menu"></span>
+                    </a>
                   </li>
                 </Link>
-                <li className="menu-item menu-item-has-children"> <a href="shop.html">Para Aprender<span className="border-menu"></span></a>
+                <Link href="/literatura">
+                  <li className="menu-item">
+                    <a>Literatura<span className="border-menu"></span>
+                    </a>
+                  </li>
+                </Link>
+                {/* <li className="menu-item menu-item-has-children"> <a href="shop.html">Para Aprender<span className="border-menu"></span></a>
                   <ul className="sub-menu">
                     <li className="menu-item"><a href="#">Biografias<span className="border-menu"></span></a>
                     </li>
@@ -38,7 +51,7 @@ const HeaderMainMenu = () => {
                     <li className="menu-item"><a href="#">Literatura<span className="border-menu"></span></a>
                     </li>
                   </ul>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

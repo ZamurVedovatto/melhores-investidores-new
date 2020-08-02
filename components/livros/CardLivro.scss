@@ -1,0 +1,207 @@
+.cardlivro-wrapper {
+  width: 220px;
+  padding: .5rem .5rem 0;
+  .cardlivro-content {
+    .cardlivro-content-top {
+      width: 100%;
+      text-align: center;
+      margin-bottom: .5rem;
+      img {
+        width: 120px;
+        height: auto;
+      }
+    }
+    .cardlivro-content-bottom {
+      display: flex;
+      flex-direction: column;
+      span {}
+      .right-top {
+        display: flex;
+        flex-direction: column;
+        .livro-title {
+          font-size: 0.9375em;
+          line-height: 1.1875em;
+          font-weight: 600;
+          margin-bottom: 0;
+          display: block;
+          white-space: normal;
+          width: 100%;
+          // overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          // max-height: 2rem;
+          -webkit-line-clamp: 8;
+          // -webkit-box-orient: vertical;
+        }
+        .livro-author {
+          font-size: 0.8125em;
+          display: block;
+          width: 100%;
+          white-space: normal;
+        }
+        .livro-stars {
+          span {
+            border: 1px solid #c5c9f2;
+            padding: 0 .25rem;
+            border-radius: 3px;
+            margin: 0 .1rem .15rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+          }
+        }
+      }
+      .right-center {
+        padding: .5rem;
+        .livro-description {
+          // overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 16px;
+          // max-height: 10rem;
+          -webkit-line-clamp: 10;
+          // -webkit-box-orient: vertical;
+        }
+      }
+      .right-bottom {
+        button.livro-cta {}
+      }
+    }
+  }
+}
+
+/* Responsividade */
+@media only screen and (max-width: 420px) {
+  .cardlivro-wrapper {
+    .cardlivro-content {
+      .cardlivro-content-top {
+        img {}
+      }
+      .cardlivro-content-bottom {
+        span {}
+        .right-top {
+          .livro-title {}
+          .livro-author {}
+          .livro-stars {
+            span {}
+          }
+        }
+        .right-center {
+          .livro-description {}
+        }
+        .right-bottom {
+          button.livro-cta {}
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cardlivro-wrapper {
+    .cardlivro-content {
+      .cardlivro-content-top {
+        img {}
+      }
+      .cardlivro-content-bottom {
+        span {}
+        .right-top {
+          .livro-title {}
+          .livro-author {}
+          .livro-stars {
+            span {}
+          }
+        }
+        .right-center {
+          .livro-description {}
+        }
+        .right-bottom {
+          button.livro-cta {}
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardlivro-wrapper {
+    width: 100%;
+    margin: 1rem 0;
+    .cardlivro-content {
+      .cardlivro-content-top {
+        img {}
+      }
+      .cardlivro-content-bottom {
+        span {}
+        .right-top {
+          padding: 1rem;
+          .livro-title {
+            font-size: 1rem;
+            line-height: 1.2;
+            max-height: none;
+          }
+          .livro-author {}
+          .livro-stars {
+            span {}
+          }
+        }
+        .right-center {
+          .livro-description {
+            -webkit-box-orient: unset;
+          }
+        }
+        .right-bottom {
+          button.livro-cta {}
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .cardlivro-wrapper {
+    .cardlivro-content {
+      .cardlivro-content-top {
+        img {}
+      }
+      .cardlivro-content-bottom {
+        span {}
+        .right-top {
+          .livro-title {}
+          .livro-author {}
+          .livro-stars {
+            span {}
+          }
+        }
+        .right-center {
+          .livro-description {}
+        }
+        .right-bottom {
+          button.livro-cta {}
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .cardlivro-wrapper {
+    .cardlivro-content {
+      .cardlivro-content-top {
+        img {}
+      }
+      .cardlivro-content-bottom {
+        span {}
+        .right-top {
+          .livro-title {}
+          .livro-author {}
+          .livro-stars {
+            span {}
+          }
+        }
+        .right-center {
+          .livro-description {}
+        }
+        .right-bottom {
+          button.livro-cta {}
+        }
+      }
+    }
+  }
+}
+/* End Responsividade */
