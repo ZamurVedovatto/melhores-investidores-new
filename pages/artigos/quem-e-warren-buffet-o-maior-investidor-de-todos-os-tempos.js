@@ -14,7 +14,7 @@ import PostRelateds from '../../components/post/PostRelateds'
 import PostAnchorLinks from '../../components/post/PostAnchorLinks'
 import PostSidebar from '../../components/post/PostSidebar'
 
-import data from "./../../lib/posts/2.json";
+import data from "./../../lib/posts/posts.json";
 
 class PostExample extends Component {
   
@@ -32,7 +32,7 @@ class PostExample extends Component {
 
   getInfo() {
     this.setState({
-      info: data
+      info: data[1]
     })
   }
 
@@ -162,10 +162,10 @@ class PostExample extends Component {
   
   
                       <div className="clearfix"></div>
-                      <div className="single_tag_share">
+                      {/* <div className="single_tag_share">
                         <PostHashs hashtags={info.hashtags} />
                         <PostShare related={info.related} />
-                      </div>
+                      </div> */}
                       {/* <PostRelateds  /> */}
                       <PostAuthor author={info.author} />
                       {/* <PostAnchorLinks /> */}

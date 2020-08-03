@@ -38,5 +38,20 @@
     "author": "Zamur Vedovatto",
     "date": "08 de agosto de 2020",
     "hashtags": ["inspiracional", "geração-de-valor", "investidores"]
+  },
+  {
+    "id": 4,
+    "title": "O fim da cultura do CDI - Bolsa de Valores ao seu alcance",
+    "url": "o-fim-da-cultura-do-cdi-bolsa-de-valores-ao-seu-alcance",
+    "images": [
+      "/img/posts/4a.jpg",
+      "/img/posts/4b.png",
+      "/img/posts/4c.jpg"
+    ],
+    "categories": ["insights", "investimento"],
+    "author": "Zamur Vedovatto",
+    "date": "08 de agosto de 2020",
+    "hashtags": ["inspiracional", "geração-de-valor"],
+    "related": [0, 2]
   }
 ]
