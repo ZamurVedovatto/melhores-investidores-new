@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from "next/Link";
 
 class PostHashs extends Component {
   render() {
@@ -9,7 +10,9 @@ class PostHashs extends Component {
           {
             hashtags.map((hashtag) => (
               <li key={hashtag}>
-                <a href="post-layout-6.html#" rel="tag">{hashtag}</a>
+                <Link href={`/dicionario-do-investidor?term=${hashtag}`}>
+                  <a rel="tag">{hashtag}</a>
+                </Link>
               </li>
             ))
           }

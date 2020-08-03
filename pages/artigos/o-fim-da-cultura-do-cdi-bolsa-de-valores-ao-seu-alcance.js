@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Tooltip } from 'antd'
 
 import artigoStyles from './artigos.module.scss';
 
@@ -13,12 +14,15 @@ import PostAnchorLinks from '../../components/post/PostAnchorLinks'
 import PostSidebar from '../../components/post/PostSidebar'
 
 import data from "./../../lib/posts/posts.json";
+import dict from './../../lib/dicionario/dicionario.json';
 
 class PostExample extends Component {
   constructor(props){
     super(props);
     this.state = {
-      info: {}
+      info: {},
+      dictionary: [],
+      text: 'pesquisando...'
     }
   }
 
@@ -28,8 +32,19 @@ class PostExample extends Component {
 
   getInfo() {
     this.setState({
-      info: data[3]
+      info: data[3],
+      dictionary: dict
     })
+  }
+
+  openDict(term) {
+    let significado = '';
+    this.state.dictionary.forEach((termLoop) => {
+      if (termLoop.termo.toLowerCase() === term.toLowerCase()) {
+        significado = termLoop.conteudo[0];
+      }
+    })
+    return significado;
   }
     
   render() {
@@ -51,10 +66,10 @@ class PostExample extends Component {
                       {/* Conteudo aqui */}
                       <div className="post_content">
                         <p>
-                        De alguns anos para cá a cultura do CDI vem chegando ao seu fim. A taxa de juros referencial SELIC está no nível mais baixo da história: 2,25% ao ano (valor atualizado em 17 de junho de 2020). Entre julho de 2015 e agosto de 2016, esta taxa estava em elevados 14,25% ao ano.
+                        De alguns anos para cá a cultura do <a uk-tooltip={this.openDict('cdi')} className={`${artigoStyles.dictLink}`}>CDI</a> vem chegando ao seu fim. A taxa de juros referencial <a uk-tooltip={this.openDict('selic')} className={`${artigoStyles.dictLink}`}>SELIC</a> está no nível mais baixo da história: 2,25% ao ano (valor atualizado em 17 de junho de 2020). Entre julho de 2015 e agosto de 2016, esta taxa estava em elevados 14,25% ao ano.
                         </p>
                         <p>
-                        Em 2015, um investimento em Tesouro Direto rendendo 100% do CDI ao ano (14,25%), pode ser considerado um ótimo negócio. Era um rendimento de alta liquidez, alto rendimento e baixo risco.
+                        Em 2015, um investimento em <a uk-tooltip={this.openDict('tesouro selic')} className={`${artigoStyles.dictLink}`}>Tesouro SELIC</a> rendendo 100% do CDI ao ano (14,25%), poderia ser considerado um ótimo negócio. Era um rendimento de alta liquidez, alto rendimento e baixo risco.
                         </p>
                         <p>
                         Em termos de comparação, Warren Buffett, um dos maiores investidores de todos os tempos, tem uma média anual em torno de 20% de valorização do seu patrimônio e dos seus investimentos.
@@ -66,10 +81,10 @@ class PostExample extends Component {
                         Mas então, o que significa o fim da cultura do CDI e o que você, investidor, tem a ver com isso?
                         </p>
                         <p>
-                          <img className="wp-image-4861 alignleft"  src={info.images[1]} alt="" width="338" height="423" />A economia brasileira sempre foi indexada e atrelada à taxa de juros do CDI. O rendimento das aplicações financeiras tem como benchmark princiapal o CDI. Por exemplo, CDBs e títulos públicos sempre tiveram o seu desempenho medido em comparação com o percentual do CDI.
+                          <img className="wp-image-4861 alignleft"  src={info.images[1]} alt="" width="338" height="423" />A economia brasileira sempre foi indexada e atrelada à taxa de juros do CDI. O rendimento das aplicações financeiras tem como <a uk-tooltip={this.openDict('benchmark')} className={`${artigoStyles.dictLink}`}>benchmark</a> princiapal o CDI. Por exemplo, <a uk-tooltip={this.openDict('cdb')} className={`${artigoStyles.dictLink}`}>CDBs</a> e títulos públicos sempre tiveram o seu desempenho medido em comparação com o percentual do <a uk-tooltip={this.openDict('cdi')} className={`${artigoStyles.dictLink}`}>CDI</a>.
                         </p>                        
                         <p>
-                        O fim da cultura do CDI quer dizer que o dinheiro aplicado no banco em juros pós-fixados agora rende muito menos do que antes. Atualmente, para buscar maiores rendimentos, o investidor precisa aumentar sua exposição a investimentos de maiores riscos, e passar a investir na bolsa de valores. E, neste cenário, é fundamental aprender a investir em Ações e em FIIs.
+                        O fim da cultura do CDI quer dizer que o dinheiro aplicado no banco em juros pós-fixados agora rende muito menos do que antes. Atualmente, para buscar maiores rendimentos, o investidor precisa aumentar sua exposição a investimentos de maiores riscos, e passar a investir na bolsa de valores. E, neste cenário, é fundamental aprender a investir em <a uk-tooltip={this.openDict('ação')} className={`${artigoStyles.dictLink}`}>Ações</a> e em <a uk-tooltip={this.openDict('Fundos Imobiliários/FII')} className={`${artigoStyles.dictLink}`}>FIIs</a>.
                         </p>
                         <p>
                         Tendo um olhar mais positivo e até otimista demais, considero que hoje o Brasil tem condições para o fortalecer o crescimento da economia, pois temos nomes fortes no Banco Central e no Ministério da Fazenda e um ambiente externo favorável, com baixa aversão ao risco e alta liquidez global. Isto favorece o crescimento das nossas organizações e um potencial aumento dos seus lucros, o que reflete diretamente na valorização dos papéis das companhias listadas na Bovespa.
@@ -83,10 +98,10 @@ class PostExample extends Component {
   
   
                       <div className="clearfix"></div>
-                      {/* <div className="single_tag_share">
+                      <div className="single_tag_share">
                         <PostHashs hashtags={info.hashtags} />
-                        <PostShare related={info.related} />
-                      </div> */}
+                        {/* <PostShare related={info.related} /> */}
+                      </div>
                       {/* <PostRelateds  /> */}
                       <PostAuthor author={info.author} />
                       {/* <PostAnchorLinks /> */}
