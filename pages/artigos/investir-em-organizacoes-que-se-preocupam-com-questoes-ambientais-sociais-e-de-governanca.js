@@ -63,7 +63,7 @@ class PostExample extends Component {
                       {/* Conteudo aqui */}
                       <div className="post_content">
                         {/* <p>Mais importante do que termos boas idéias é colocarmos nossas ideias em prática e, melhor ainda, concluí-las, terminar os projetos iniciados. É claro que também é importante criarmos nossos projetos baseados em uma boa teoria, mas nada mais motivante e revigorante do que tirar as ideias do papel e vê-las criando corpo.</p> */}
-                        <p>O mundo caminho para a direção onde todos devem agir pensando nas consequências dos seus atos, fazendo o bem para os outros e para o mundo em que vivemos. E não seria diferente no mundo dos investimentos.</p>
+                        <p>O mundo caminha para a direção onde todos devem agir pensando nas consequências dos seus atos, fazendo o bem para os outros e para o mundo em que vivemos. E não seria diferente no mundo dos investimentos.</p>
 
                         <p>A preocupação Ambiental, Social e de Governança (sigla ESG em inglês - Environmental, social and corporate governance), trata-se dos três pilares primordiais a serem considerados em um processo de análise de investimentos. Segundo quem defende a teoria, a incorporação dos três critérios tende a minimizar os riscos dos investimentos e trazer retornos maiores a <a uk-tooltip={this.openDict('longo prazo')} className={`${artigoStyles.dictLink}`}>longo prazo</a>.</p>
                         
@@ -77,6 +77,14 @@ class PostExample extends Component {
                         <p>A análise do investidor e dos gestores de investimento, quando baseada nos pilares do ESG, tende a exigir que os líderes das empresas se adaptem continuamente aos seus critérios. É uma tendência de crescimento orgânico, onde as organizações acabarão tendo que se adequar ao que os investidores exigem.
                         </p>  
                         <p>E você, considera importante que foquemos as nossas análises e investimentos em organizações que se preocupam efetivamente com os critérios do <a uk-tooltip={this.openDict('esg')} className={`${artigoStyles.dictLink}`}>ESG</a>?</p>
+
+                        <p className={`${artigoStyles.subtitle}`}>Referências</p>
+                        <p>
+                          <a href="https://m.sebrae.com.br/sites/PortalSebrae/artigos/o-que-sao-estrategias-empresariais,e4df6d461ed47510VgnVCM1000004c00210aRCRD" target="_blank">SEBRAE</a>
+                        </p>
+                        <p>
+                          <a href="https://conteudos.xpi.com.br/coe/relatorios/esg-investimentos-sustentaveis-e-rentaveis/" target="_blank">XP Investimentos</a>
+                        </p>
                       </div>
                       {/* Fim - Conteudo aqui */}  
   
