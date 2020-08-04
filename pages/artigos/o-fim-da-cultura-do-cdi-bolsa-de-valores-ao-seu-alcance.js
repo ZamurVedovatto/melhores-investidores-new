@@ -21,8 +21,7 @@ class PostExample extends Component {
     super(props);
     this.state = {
       info: {},
-      dictionary: [],
-      text: 'pesquisando...'
+      dictionary: []
     }
   }
 
@@ -81,7 +80,7 @@ class PostExample extends Component {
                         Mas então, o que significa o fim da cultura do CDI e o que você, investidor, tem a ver com isso?
                         </p>
                         <p>
-                          <img className="wp-image-4861 alignleft"  src={info.images[1]} alt="" width="338" height="423" />A economia brasileira sempre foi indexada e atrelada à taxa de juros do CDI. O rendimento das aplicações financeiras tem como <a uk-tooltip={this.openDict('benchmark')} className={`${artigoStyles.dictLink}`}>benchmark</a> princiapal o CDI. Por exemplo, <a uk-tooltip={this.openDict('cdb')} className={`${artigoStyles.dictLink}`}>CDBs</a> e títulos públicos sempre tiveram o seu desempenho medido em comparação com o percentual do <a uk-tooltip={this.openDict('cdi')} className={`${artigoStyles.dictLink}`}>CDI</a>.
+                          <img className="wp-image-4861 alignleft" src={info.images[1]} alt="" width="338" height="423" />A economia brasileira sempre foi indexada e atrelada à taxa de juros do CDI. O rendimento das aplicações financeiras tem como <a uk-tooltip={this.openDict('benchmark')} className={`${artigoStyles.dictLink}`}>benchmark</a> princiapal o CDI. Por exemplo, <a uk-tooltip={this.openDict('cdb')} className={`${artigoStyles.dictLink}`}>CDBs</a> e títulos públicos sempre tiveram o seu desempenho medido em comparação com o percentual do <a uk-tooltip={this.openDict('cdi')} className={`${artigoStyles.dictLink}`}>CDI</a>.
                         </p>                        
                         <p>
                         O fim da cultura do CDI quer dizer que o dinheiro aplicado no banco em juros pós-fixados agora rende muito menos do que antes. Atualmente, para buscar maiores rendimentos, o investidor precisa aumentar sua exposição a investimentos de maiores riscos, e passar a investir na bolsa de valores. E, neste cenário, é fundamental aprender a investir em <a uk-tooltip={this.openDict('ação')} className={`${artigoStyles.dictLink}`}>Ações</a> e em <a uk-tooltip={this.openDict('Fundos Imobiliários/FII')} className={`${artigoStyles.dictLink}`}>FIIs</a>.

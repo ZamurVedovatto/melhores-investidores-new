@@ -13,12 +13,14 @@ import PostAnchorLinks from '../../components/post/PostAnchorLinks'
 import PostSidebar from '../../components/post/PostSidebar'
 
 import data from "./../../lib/posts/posts.json";
+import dict from './../../lib/dicionario/dicionario.json';
 
 class PostExample extends Component {
   constructor(props){
     super(props);
     this.state = {
-      info: {}
+      info: {},
+      dictionary: []
     }
   }
 
@@ -28,8 +30,19 @@ class PostExample extends Component {
 
   getInfo() {
     this.setState({
-      info: data[2]
+      info: data[2],
+      dictionary: dict
     })
+  }
+
+  openDict(term) {
+    let significado = '';
+    this.state.dictionary.forEach((termLoop) => {
+      if (termLoop.termo.toLowerCase() === term.toLowerCase()) {
+        significado = termLoop.conteudo[0];
+      }
+    })
+    return significado;
   }
     
   render() {
@@ -48,31 +61,33 @@ class PostExample extends Component {
                     <div className="single_section_content box blog_large_post_style">
                       <PostTopInfo info={info} />
     
+                      {/* <a uk-tooltip={this.openDict('buy and hold')} className={`${artigoStyles.dictLink}`}>Buy and Hold</a> */}
+
                       {/* Conteudo aqui */}
                       <div className="post_content">
                         <p className={`${artigoStyles.subtitle}`}>Quem foi Benjamin Graham?</p>
-                        <p>Economista por formação, mentor de Warren Buffett e considerado o precursor da estratégia de investimento denominada Buy and Hold. Graham é considerado um dos maiores investidores de todos os tempos.</p>
+                        <p>Economista por formação, mentor de Warren Buffett e considerado o precursor da estratégia de investimento denominada <a uk-tooltip={this.openDict('buy and hold')} className={`${artigoStyles.dictLink}`}>Buy and Hold</a>. Graham é considerado um dos maiores investidores de todos os tempos.</p>
                         <p>Nascido em Londres no ano de 1894, Graham perdeu o pai na infância e sentiu na pele a pobreza, após a sua família perder todas as economias na derrocada financeira que ficou conhecida como Bank Panic (pânico dos banqueiros).</p>
                         <p>Ao invés de se tornar um coitado, Graham usou o período de sofrimento e pobreza para se tornar um ótimo estudante. Conquistou bolsa de estudos e se formou com louvor na Universidade de Columbia.</p>
                         <blockquote>
                           <p>As pessoas não conseguem prever o que irá acontecer no mercado de ações.</p>
                         </blockquote>
                         <p className={`${artigoStyles.subtitle}`}>Maturidade e criação do seu legado</p>
-                        <p>Aos 25 ele já possuía grande prestígio atuando em um emprego em Wall Street. Porém, em mais um revés, sente a falência novamente na pele, perdendo quase todos os seus investimentos durante a crise de 1929.</p>
-                        <p>Como lição tirada após esse momento e após se reerguer, escreve junto a David Dodd o livro que hoje é considerado um dos mais importantes sobre Análise Fundamentalista, intitulado Security Analysis.</p>
+                        <p>Aos 25 ele já possuía grande prestígio atuando em um emprego em <a uk-tooltip={this.openDict('wall street')} className={`${artigoStyles.dictLink}`}>Wall Street</a>. Porém, em mais um revés na sua vida, sente a falência novamente na pele, perdendo quase todos os seus <a uk-tooltip={this.openDict('investimento')} className={`${artigoStyles.dictLink}`}>investimentos</a> durante a <a uk-tooltip={this.openDict('crise de 1929')} className={`${artigoStyles.dictLink}`}>crise de 1929</a>.</p>
+                        <p>Como lição tirada após esse momento e após se reerguer, escreve junto a David Dodd o livro que hoje é considerado um dos mais importantes sobre <a uk-tooltip={this.openDict('análise fundamentalista')} className={`${artigoStyles.dictLink}`}>Análise Fundamentalista</a>, intitulado Security Analysis.</p>
                         <blockquote>
                           <p>Uma operação de investimento é aquela que, por meio da análise, promete segurança para o principal e um retorno adequado. As operações que não vão ao encontro destas exigências são especulativas.</p>
                         </blockquote>
                         <p className={`${artigoStyles.subtitle}`}>O investidor inteligente</p>
-                        <p>Porém, sua maior obra seria lançada em 1949. O Investidor Inteligente é leitura fundamental para investidores do Value Investing. Nesta obra, Graham cunha o método onde deve-se analisar os balanços patrimoniais e o fluxo de caixa da empresa para saber se a sua ação estava cara ou barata.</p>
+                        <p>Porém, sua maior obra seria lançada em 1949. O Investidor Inteligente é leitura fundamental para investidores do <a uk-tooltip={this.openDict('value investing')} className={`${artigoStyles.dictLink}`}>Value Investing</a>. Nesta obra, Graham cunha o método onde deve-se analisar os <a uk-tooltip={this.openDict('balanço patrimonial')} className={`${artigoStyles.dictLink}`}>balanços patrimoniais</a> e o <a uk-tooltip={this.openDict('fluxo de caixa')} className={`${artigoStyles.dictLink}`}>fluxo de caixa</a> da empresa para saber se a sua <a uk-tooltip={this.openDict('ação')} className={`${artigoStyles.dictLink}`}>ação</a> estava cara ou barata.</p>
                         <p>
                           <img className="wp-image-4861 alignleft" src={info.images[1]} alt="" width="338" height="423" />
                         </p>
                         <p>Estes princípios buscam evitar perdas e auxiliam o investidor a ter uma maior disciplina emocional.</p>
-                        <p>Investindo em ações que possuem cotações menores que o seu valor intrínseco, ou seja, com maior margem de segurança, tendem a manter o investidor mais tranquilo do que aqueles que compraram ações nos topos pensando que aquele papel iria se valorizar ainda mais.</p>
+                        <p>Investindo em ações que possuem <a uk-tooltip={this.openDict('cotação')} className={`${artigoStyles.dictLink}`}>cotações</a> menores que o seu <a uk-tooltip={this.openDict('valor intrínseco')} className={`${artigoStyles.dictLink}`}>valor intrínseco</a>, ou seja, com maior <a uk-tooltip={this.openDict('margem de segurança')} className={`${artigoStyles.dictLink}`}>margem de segurança</a>, tendem a manter o investidor mais tranquilo do que aqueles que compraram ações nos topos pensando que aquele papel iria se valorizar ainda mais.</p>
                         <p className={`${artigoStyles.subtitle}`}>Lição principal</p>
-                        <p>Além da margem de segurança, Graham considerava ações como negócios e não como ativos especulativos.</p>
-                        <p>Hoje os seus ensinamentos são considerados válidos, atemporais e essenciais para que um investidor chegue ao sucesso ao longo prazo. E a lição principal é a de que o mercado não pode ditar as nossas decisões no de investimento.</p>
+                        <p>Além da margem de segurança, Graham considerava ações como negócios e não como  <a uk-tooltip={this.openDict('ativo')} className={`${artigoStyles.dictLink}`}>ativos</a> <a uk-tooltip={this.openDict('especulação financeira')} className={`${artigoStyles.dictLink}`}>especulativos</a>.</p>
+                        <p>Ainda hoje os seus ensinamentos são considerados extremamente válidos, atemporais e essenciais para que um investidor chegue ao sucesso ao longo prazo. E a lição principal é a de que o mercado não pode ditar as nossas decisões de investimento.</p>
                         <p className={`${artigoStyles.subtitle} `}>Referências</p>
                         <p className={`${artigoStyles.referencias}`}>
                           <a href="https://portaleducando.com/o-guru-da-analise-fundamentalista/" target="_blank">Portal Educando</a>
@@ -141,10 +156,10 @@ class PostExample extends Component {
   
   
                       <div className="clearfix"></div>
-                      {/* <div className="single_tag_share">
+                      <div className="single_tag_share">
                         <PostHashs hashtags={info.hashtags} />
-                        <PostShare related={info.related} />
-                      </div> */}
+                        {/* <PostShare related={info.related} /> */}
+                      </div>
                       {/* <PostRelateds  /> */}
                       <PostAuthor author={info.author} />
                       {/* <PostAnchorLinks /> */}

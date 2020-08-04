@@ -110,6 +110,15 @@
     ]
   },
   {
+    "termo": "Balanço Patrimonial",
+    "inicial": "B",
+    "conteudo": [
+      "O balanço patrimonial é uma demonstração contábil que tem, por finalidade, apresentar a posição contábil, financeira e econômica de uma entidade (em geral, uma empresa) em determinada data, representando uma posição estática (posição ou situação do patrimônio em determinada data)",
+      "O balanço patrimonial apresenta os ativos (bens e direitos), passivos (exigibilidades e obrigações) e o patrimônio líquido, que é resultante da diferença entre o total de ativos e o total de passivos",
+      "O balanço pode ser considerado como uma igualidade contabilística dividida em dois membros, o primeiro membro é representado pelo ativo, e o segundo membro pelo passivo e capital próprio da empresa"
+    ]
+  },
+  {
     "termo": "BDR’s",
     "inicial": "B",
     "conteudo": [
@@ -257,6 +266,15 @@
     ]
   },
   {
+    "termo": "Crise de 1929",
+    "inicial": "C",
+    "conteudo": [
+      "A Grande Depressão, também conhecida como Crise de 1929, foi uma grande depressão econômica que teve início em 1929, e que persistiu ao longo da década de 1930, terminando apenas com a Segunda Guerra Mundial",
+      "A Grande Depressão é considerada o pior e o mais longo período de recessão econômica do sistema capitalista do século XX",
+      "Este período de depressão econômica causou altas taxas de desemprego, quedas drásticas do produto interno bruto de diversos países, bem como quedas drásticas na produção industrial, preços de ações, e em praticamente todo o medidor de atividade econômica, em diversos países no mundo"
+    ]
+  },
+  {
     "termo": "CVM",
     "inicial": "C",
     "conteudo": [
@@ -361,6 +379,21 @@
     ]
   },
   {
+    "termo": "Especulação Financeira",
+    "inicial": "E",
+    "conteudo": [
+      "Especulação financeira é a compra de ativos com fins não ao seu uso direto, mas à sua venda futura com lucro, sob condições de incerteza"
+    ]
+  },
+  {
+    "termo": "ESG",
+    "inicial": "E",
+    "conteudo": [
+      "Sigla ESG em inglês para Environmental, social and corporate governance",
+      "Trata-se de três critérios fundamentais para organizações que se preocupam com as pessoas e com o mundo em que vivemos"
+    ]
+  },
+  {
     "termo": "Efeito manada",
     "inicial": "E",
     "conteudo": [
@@ -380,6 +413,24 @@
     ]
   },
   {
+    "termo": "Estratégia Empresarial",
+    "inicial": "E",
+    "conteudo": [
+      "É a definição da rota, a organização dos recursos organizacionais para a caminhada da empresa no mercado",
+      "Estratégias de Crescimento: estratégia empresarial para aumentar os lucros, as vendas, ou a participação do mercado, aumentando o valor da empresa",
+      "Estratégias de estabilidade: quando há operações em diversos setores, a empresa pode querer concentrar suas operações, seus esforços administrativos, nas empresas existentes, sem aumentar suas unidades",
+      "Estratégias de redução: quando os resultados estão abaixo do esperado, ou a sobrevivência está desafiadora, a redução pode ser uma estratégia de melhoria da situação negativa, podendo ser, de reviravolta – mudanças para melhoria; desinvestimento ou liquidação se for o caso."
+    ]
+  },
+  {
+    "termo": "Fluxo de Caixa",
+    "inicial": "F",
+    "conteudo": [
+      "Em Finanças, o fluxo de caixa refere-se ao fluxo do dinheiro no caixa da empresa, ou seja, ao montante de caixa recolhido e gasto por uma empresa durante um período de tempo definido, algumas vezes ligado a um projeto específico",
+      "O fluxo de caixa refere-se ao movimento de dinheiro no período passado, enquanto o orçamento é o seu equivalente para períodos futuros"
+    ]
+  },
+  {
     "termo": "FGC (Fundo Garantidor de Crédito)",
     "inicial": "F",
     "conteudo": [
@@ -393,6 +444,13 @@
     "inicial": "F",
     "conteudo": [
       "É o nome dado ao evento onde uma empresa que já possui capital aberto emite mais ações para serem negociadas no mercado"
+    ]
+  },
+  {
+    "termo": "Fornecedor",
+    "inicial": "F",
+    "conteudo": [
+      "O termo deriva do verbo fornecer, que faz referência a prover ou providenciar o necessário para um determinado fim"
     ]
   },
   {
@@ -542,6 +600,13 @@
     ]
   },
   {
+    "termo": "Investimento",
+    "inicial": "I",
+    "conteudo": [
+      "Aplicação de recursos, tempo, esforço etc. a fim de se obter algo"
+    ]
+  },
+  {
     "termo": "Investidor Qualificado",
     "inicial": "I",
     "conteudo": [
@@ -643,6 +708,13 @@
     ]
   },
   {
+    "termo": "Longo Prazo",
+    "inicial": "L",
+    "conteudo": [
+      "Longo prazo é o período de tempo em que não há fatores fixos de produção, tendo como origem a palavra do latim longu, que significa, na tradução livre, \"aquilo que tem muita longitude/comprimento ou cuja longitude supera a largura\""
+    ]
+  },
+  {
     "termo": "Lote fracionário",
     "inicial": "L",
     "conteudo": [
@@ -664,6 +736,13 @@
     "conteudo": [
       "Lucro originado exclusivamente pela operação do negócio, descontando todas as despesas administrativas, operacionais e comerciais",
       "Também chamado de EBIT. Lucro Operacional = Receita - Despesas Operacionais"
+    ]
+  },
+  {
+    "termo": "Margem de Segurança",
+    "inicial": "M",
+    "conteudo": [
+      "Margem de segurança é a diferença entre o preço da ação no mercado e seu valor intrínseco"
     ]
   },
   {
@@ -691,6 +770,15 @@
       "Lucro Líquido/Receita Líquida",
       "Relação entre o lucro líquido da empresa e a sua receita líquida de vendas",
       "Assim como as outras, quanto maior, melhor"
+    ]
+  },
+  {
+    "termo": "Organização",
+    "inicial": "O",
+    "conteudo": [
+      "Associação de pessoas que combinam esforços individuais e em equipe com a finalidade de realizar propósitos coletivos",
+      "Por meio de uma organização torna-se possível perseguir e alcançar objectivos que seriam inatingível para uma pessoa",
+      "Uma grande empresa ou uma pequena oficina, um laboratório ou o corpo de bombeiros, um hospital ou uma escola são todos exemplos de organizações, que e até mega - organizações"
     ]
   },
   {
@@ -933,6 +1021,15 @@
     ]
   },
   {
+    "termo": "Valor intrínseco",
+    "inicial": "V",
+    "conteudo": [
+      "O valor intrínseco pode ser entendido como o preço justo de uma ação",
+      "Em outras palavras, uma ação pode estar sendo cotada a um preço e ter um valor intrínseco diferente",
+      "Isso porque essa metodologia se concentra no Valuation, ou seja, no que a empresa vale e não no quanto a ação está sendo negociada"
+    ]
+  },
+  {
     "termo": "Valuation",
     "inicial": "V",
     "conteudo": [
@@ -963,6 +1060,13 @@
     "inicial": "V",
     "conteudo": [
       "É a variação da cotação de um determinado ativo em um período de tempo"
+    ]
+  },
+  {
+    "termo": "Wall Street",
+    "inicial": "W",
+    "conteudo": [
+      "A Wall Street é uma rua que corre na Manhattan Inferior, e é considerada o coração histórico do atual Distrito Financeiro da cidade de Nova Iorque, onde se localiza a bolsa de valores de Nova Iorque"
     ]
   }
 ]

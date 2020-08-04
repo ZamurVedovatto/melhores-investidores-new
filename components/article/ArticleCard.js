@@ -29,7 +29,7 @@ class ArticleCard extends Component {
             {
               categories && categories.map(category => 
                 <span key={category} className="meta-category-small">
-                  <a className="post-category-color-text" style= {{ background: "#36c942" }} href={`artigos/${category}`}>{category}</a>
+                  <a className="post-category-color-text" style= {{ background: "#36c942" }} href={`artigos&category=${category}`}>{category}</a>
                 </span> 
               )
             }
@@ -38,12 +38,12 @@ class ArticleCard extends Component {
             <div className="post-entry-content-wrapper">
               <div className="large_post_content">
                 <h3 className="image-post-title">
-                  <a href="index-1.html#">{title}</a>
+                  <a href={`/artigos/${url}`}>{title}</a>
                 </h3>
                 <span className="jl_post_meta">
                   <span className="jl_author_img_w">
                     <img src="/img/favicon-zamur.png" width="30" height="30" alt={author} className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" />
-                    <a href="index-1.html#" title={`Artigos por ${author}`} rel="author">{author}</a>
+                    <a href={`/artigos&author=${author}`} title={`Artigos por ${author}`} rel="author">{author}</a>
                   </span>
                   <span className="post-date">
                     <i className="fa fa-clock-o"></i>{date}
