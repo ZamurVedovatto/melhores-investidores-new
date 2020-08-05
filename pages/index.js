@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/Layout';
+import Layout, { siteTitle } from '../components/layout';
 import fetch from 'isomorphic-unfetch';
 import Home from './home';
 

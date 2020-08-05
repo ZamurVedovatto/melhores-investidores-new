@@ -12,8 +12,8 @@ class ArticleRecentCard extends Component {
       isLoading: false
     }
   }
-      
-  render() {
+
+  render() {    
     const { id, title, url, images, categories, author, date, hashtags, related } = this.state.info;
 
     return (
@@ -26,9 +26,13 @@ class ArticleRecentCard extends Component {
         </Link>
         <div className="item-details">
           <span className="meta-category-small">
-            <Link href={url} >
-              <a className="post-category-color-text" style={{ background: "#d800f9" }} href="post-layout-6.html#">{categories[0]}</a>
-            </Link>
+            {
+              categories && categories.map(category => 
+                <a className="post-category-color-text" style={{ background: "#d800f9" }}>
+                  {category}
+                </a>
+              )
+            }
           </span> 
           <h3 className="feature-post-title">
             <Link href={url} >

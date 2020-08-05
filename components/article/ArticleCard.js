@@ -22,17 +22,17 @@ class ArticleCard extends Component {
           <div className="image-post-thumb">
             <Link href={`artigos/${url}`} >
               <a className="link_image featured-thumbnail" title={title}>
-                <img width="780" height="450" src={images[0]} className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt="" />
+                <img width="780" height="450" src={images[0]} className="attachment-disto_large_feature_image size-disto_large_feature_image wp-post-image" alt={title} />
                 <div className="background_over_image"></div>
               </a>
             </Link>
+            <span className="meta-category-small">
             {
               categories && categories.map(category => 
-                <span key={category} className="meta-category-small">
-                  <a className="post-category-color-text" style= {{ background: "#36c942" }} href={`artigos&category=${category}`}>{category}</a>
-                </span> 
+                <a key={category} className="post-category-color-text" style= {{ background: "#36c942" }} href={`artigos&category=${category}`}>{category}</a>
               )
             }
+            </span> 
           </div>
           <div className="post-entry-content">
             <div className="post-entry-content-wrapper">
@@ -43,7 +43,7 @@ class ArticleCard extends Component {
                 <span className="jl_post_meta">
                   <span className="jl_author_img_w">
                     <img src="/img/favicon-zamur.png" width="30" height="30" alt={author} className="avatar avatar-30 wp-user-avatar wp-user-avatar-30 alignnone photo" />
-                    <a href={`/artigos&author=${author}`} title={`Artigos por ${author}`} rel="author">{author}</a>
+                    <a title={`Artigos por ${author}`} rel="author">{author}</a>
                   </span>
                   <span className="post-date">
                     <i className="fa fa-clock-o"></i>{date}

@@ -1,6 +1,6 @@
 import dicionarioStyles from './dicionario-do-investidor.module.scss';
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/Layout';
+import Layout, { siteTitle } from '../components/layout';
 import Home from './home';
 import dicionario from './../lib/dicionario/dicionario.json';
 import { Component } from 'react';

@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import literaturaStyles from './literatura.module.scss';
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/Layout';
+import Layout, { siteTitle } from '../components/layout';
 import LivrosMain from './../components/livros/LivrosMain';
 
 class DicionarioDoInvestidor extends Component {
