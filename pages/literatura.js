@@ -2,6 +2,7 @@ import literaturaStyles from './literatura.module.scss';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import LivrosMain from './../components/livros/LivrosMain';
+import fetch from 'isomorphic-unfetch';
 
 const LiteraturaMain = (props) => {
   const { livros } = props;

@@ -1,5 +1,6 @@
 import dicionarioStyles from './dicionario-do-investidor.module.scss';
 import Head from 'next/head';
+import fetch from 'isomorphic-unfetch';
 import Layout, { siteTitle } from '../components/layout';
 import { useState } from 'react';
 

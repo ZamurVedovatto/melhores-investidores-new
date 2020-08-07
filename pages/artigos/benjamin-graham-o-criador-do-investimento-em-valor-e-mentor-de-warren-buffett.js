@@ -15,7 +15,7 @@ import PostSidebar from '../../components/post/PostSidebar'
 import data from "./../../lib/posts/posts.json";
 import dict from './../../lib/dicionario/dicionario.json';
 
-class PostExample extends Component {
+export default class extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -98,63 +98,9 @@ class PostExample extends Component {
                         <p className={`${artigoStyles.referencias}`}>
                           <a href="https://clubedovalor.com.br/benjamin-graham/" target="_blank">Clube do Valor</a>
                         </p>
-
-
-                        {/*
-                        
-                        <p className={`${artigoStyles.subtitle}`}></p>
-                        <p className={`${artigoStyles.subtitle}`}></p>
-                        <p className={`${artigoStyles.subtitle}`}></p>
-                        <p className={`${artigoStyles.subtitle}`}></p>
-
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-
-                        <blockquote>
-                          <p></p>
-                        </blockquote>
-                        <blockquote>
-                          <p></p>
-                        </blockquote>
-                        <blockquote>
-                          <p></p>
-                        </blockquote>
-
-                        <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />
-                        </p>
-                        <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />
-                        </p>
-                        <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />
-                        </p>
-                        <p>
-                          <img className="wp-image-4861 alignleft"  src={info.imgSecondary} alt="" width="338" height="423" />
-                        </p>
-                        
-                        <p>
-                          <a href="https://comoinvestir.thecap.com.br/grandes-investidores-de-sucesso-bolsa/" target="_blank">The Cap</a>
-                        </p>
-                        <p>
-                          <a href="https://www.infomoney.com.br/perfil/warren-buffett/" target="_blank">Info Money</a>
-                        </p>
-                        
-                        */}
-
                       </div>
                       {/* Fim - Conteudo aqui */}
-  
-  
+    
                       <div className="clearfix"></div>
                       <div className="single_tag_share">
                         <PostHashs hashtags={info.hashtags} />
@@ -177,5 +123,3 @@ class PostExample extends Component {
     )
   }
 }
-
-export default PostExample;
