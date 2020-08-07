@@ -1,29 +1,27 @@
-import { Component } from 'react';
 import literaturaStyles from './literatura.module.scss';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import LivrosMain from './../components/livros/LivrosMain';
 
-class DicionarioDoInvestidor extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isLoading: false
-    }
-  }
+const LiteraturaMain = (props) => {
+  const { livros } = props;
 
-  render() {
+  return (
+    <Layout>
+      <Head>
+        <title>{siteTitle} - Literatura</title>
+      </Head>
+      <LivrosMain livros={livros} />
+    </Layout>
+  )
+}
 
-    return (
-      <Layout>
-        <Head>
-          <title>{siteTitle} - Literatura</title>
-        </Head>
-        <LivrosMain />
-      </Layout>
-    )
-
+LiteraturaMain.getInitialProps = async ( context ) => {
+  const data = await fetch('http://localhost:3000/api/livros');
+  const results = await data.json();
+  return {
+    livros: results
   }
 }
 
-export default DicionarioDoInvestidor;
+export default LiteraturaMain;

@@ -11,13 +11,16 @@ const Index = (props) => {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Home />
+      {/* <Home /> */}
+      {
+        posts.map(p => <span>{p.title}</span>)
+      }
     </Layout>
   )
 }
 
 Index.getInitialProps = async ( context ) => {
-  const data = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const data = await fetch('http://localhost:3000/api/posts');
   const results = await data.json();
   return {
     posts: results

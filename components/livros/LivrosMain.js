@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import livrosData from './../../lib/livros/livrosGeral.json';
 import CardLivro from './CardLivro';
 
 class LivrosMain extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     let unonderedBooks = this.sortLivros();
     this.state = {
       livros: unonderedBooks
@@ -12,7 +11,7 @@ class LivrosMain extends Component {
   }
 
   sortLivros() {
-    let data = livrosData;
+    let data = this.props.livros;
     let currentIndex = data.length, temporaryValue, randomIndex;
     while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
@@ -42,20 +41,6 @@ class LivrosMain extends Component {
     const { livros } = this.state;
     return(
       <div className="row" style={{ margin: "0 auto", maxWidth: "1040px", width: "100%", padding: "2rem 0" }}>
-        {/* <div className="col-sm-12 col-md-3 uk-card" style={{ padding: "0 1rem" }}>
-          <div className="uk-card-header" style={{ padding: "1rem 0 .25rem", textAlign: "left" }}>
-            <span style={{ fontSize: "1.2rem", fontWeight: "bold", textTransform: "uppercase" }}>Categorias</span>
-          </div>
-          <div className="uk-card-body" style={{ padding: "1rem 0" }}>
-            <ul className="uk-list uk-list-divider">
-              <li>Biografias</li>
-              <li>Empreendedorismo</li>
-              <li>Negócios</li>
-              <li>Insights</li>
-              <li>Mindset</li>
-            </ul>
-          </div>
-        </div> */}
         <div className="livrosintro-content col-12">
           <div className="row" style={{ width: "100%" }}>
             {
