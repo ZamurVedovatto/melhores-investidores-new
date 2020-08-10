@@ -10,7 +10,7 @@ const Home = (props) => {
       <div className="jl_home_section">
         <div className="container" style={{clear: "both", paddingTop: "50px", paddingBottom: "0px" }}>
           <HeroSection posts={posts} />
-          <LatestArticles />
+          <LatestArticles posts={posts} />
         </div>
       </div>
     </section>

@@ -1,46 +1,38 @@
-const { Component } = require("react");
-import data from "./../../lib/posts/posts.json";
+const { Component, useState, useEffect } = require("react");
 import ArticleRecentCard from "../article/ArticleRecentCard";
 
-class PostSidebarPosts extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      articles: []
-    }
-  }
+const PostSidebarPosts = (props) => {
+  const [posts, setPosts] = useState([]);
 
-  componentWillMount() {
-    this.setArticles();
-  }
+  useEffect(() => {
+    setArticles(props.posts)
+  }), [props.posts];
 
-  setArticles() {
+
+  const setArticles = (data) => {
     let articles = data.reverse().slice(0,4);
-    this.setState({ articles })
+    setPosts(articles);
   }
 
-  render() {
-    const { articles } = this.state;
-    return(
-      <div id="disto_recent_post_widget-7" className="widget post_list_widget">
-        <div className="widget_jl_wrapper"><span className="jl_none_space"></span>
-          <div className="widget-title">
-            <h2>Artigos Recentes</h2>
-          </div>
-          <div>
-            <ul className="feature-post-list recent-post-widget">
-              {
-                articles && articles.map(post => 
-                  <ArticleRecentCard key={post.id} info={post} />
-                )
-              }
-            </ul>
-          </div>
-          <span className="jl_none_space"></span>
+  return(
+    <div id="disto_recent_post_widget-7" className="widget post_list_widget">
+      <div className="widget_jl_wrapper"><span className="jl_none_space"></span>
+        <div className="widget-title">
+          <h2>Artigos Recentes</h2>
         </div>
+        <div>
+          <ul className="feature-post-list recent-post-widget">
+            {
+              posts && posts.map(post => 
+                <ArticleRecentCard key={post.id} info={post} />
+              )
+            }
+          </ul>
+        </div>
+        <span className="jl_none_space"></span>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default PostSidebarPosts;

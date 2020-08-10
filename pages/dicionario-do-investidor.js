@@ -61,7 +61,7 @@ const DicionarioDoInvestidor = (props) => {
                     <ul className="uk-list">
                       {
                         termos && termos.map((termo)  =>
-                          <li>
+                          <li key={termo.termo}>
                             <a key={termo.termo} onClick={() => handleClick(termo)}>
                               {termo.termo}
                             </a>
