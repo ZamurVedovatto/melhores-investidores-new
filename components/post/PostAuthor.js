@@ -1,11 +1,6 @@
-const { Component, useState, useEffect } = require("react");
-
 const PostAuthor = (props) => {
   // TODO buscar author pelo id e setor a descricao dinamicamento
-  const [author, setAuthor] = useState({});
-  useEffect(() => {
-    setAuthor(props.author);
-  }, [props.author]);
+  const { author } = props;
 
   return (
     <div className="auth">

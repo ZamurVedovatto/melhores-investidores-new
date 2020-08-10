@@ -1,11 +1,7 @@
-import React, { Component, useState, useEffect } from "react";
 import Link from "next/Link";
 
 const PostHashs = (props) => {
-  const [ hashtags, setHashtags] = useState([]);
-  useEffect(() => {
-    setHashtags(prosp.hashtags);
-  }, [props.hashtags]);
+  const { hashtags } = props;
 
   return (
     <div className="tag-cat">

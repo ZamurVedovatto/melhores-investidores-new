@@ -2,18 +2,18 @@ const { useState, useEffect } = require("react");
 
 const PostSidebarCategories = (props) => {
   const [categories, setCategories] = useState([]);
+
   useEffect(() => {
+    async function setCategoriesData(artigos) {
+      let categories = [];
+      await artigos.map((artigo) => {
+        artigo.categories.map((cat) => categories.push(cat))
+      })
+      categories = await uniq(categories);
+      setCategories(categories);
+    }
     setCategoriesData(props.posts);
   }, [props.posts])
-
-  const setCategoriesData = (artigos) => {
-    let categories = [];
-    artigos.map((artigo) => {
-      artigo.categories.map((cat) => categories.push(cat))
-    })
-    categories = uniq(categories);
-    setCategories(categories);
-  }
 
   const uniq = (array) => {
     return array.sort().filter(function(item, pos, ary) {

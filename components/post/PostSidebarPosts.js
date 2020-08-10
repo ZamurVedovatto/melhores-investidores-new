@@ -2,17 +2,7 @@ const { Component, useState, useEffect } = require("react");
 import ArticleRecentCard from "../article/ArticleRecentCard";
 
 const PostSidebarPosts = (props) => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    setArticles(props.posts)
-  }), [props.posts];
-
-
-  const setArticles = (data) => {
-    let articles = data.reverse().slice(0,4);
-    setPosts(articles);
-  }
+  const { posts } = props;
 
   return(
     <div id="disto_recent_post_widget-7" className="widget post_list_widget">
@@ -24,7 +14,7 @@ const PostSidebarPosts = (props) => {
           <ul className="feature-post-list recent-post-widget">
             {
               posts && posts.map(post => 
-                <ArticleRecentCard key={post.id} info={post} />
+                <ArticleRecentCard key={post.id} post={post} />
               )
             }
           </ul>

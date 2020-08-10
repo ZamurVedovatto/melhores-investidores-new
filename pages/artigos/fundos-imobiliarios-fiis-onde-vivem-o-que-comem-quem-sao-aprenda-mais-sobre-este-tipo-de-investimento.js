@@ -1,7 +1,5 @@
-import React, { Component, useState, useEffect } from 'react';
-
+import React from 'react';
 import artigoStyles from './artigos.module.scss';
-
 import Head from 'next/head';
 import Layout from '../../components/layout';
 import PostTopInfo from '../../components/post/PostTopInfo';
@@ -10,19 +8,7 @@ import PostAuthor from '../../components/post/PostAuthor';
 import PostSidebar from '../../components/post/PostSidebar';
 
 const Post = (props) => {
-  const [post, setPost] = useState({});
-  const [posts, setPosts] = useState([]);
-  const [dicionario, setDicionario] = useState([]);
-
-  useEffect(() => {
-    let article = props.posts[6];
-    setPost(article);
-    setPosts(props.posts);
-  }, [props.posts])
-
-  useEffect(() => {
-    setDicionario(props.dicionario);
-  }, [props.dicionario]);
+  const { post, posts, dicionario } = props;
 
   const openDict = (term) => {
     let significado = '';
@@ -46,7 +32,7 @@ const Post = (props) => {
               <div className="widget_container content_page">
                 <div className="post type-post status-publish format-standard has-post-thumbnail hentry category-crazy tag-food tag-inspiration">
                   <div className="single_section_content box blog_large_post_style">
-                    <PostTopInfo info={post} />    
+                    <PostTopInfo post={post} />    
 
                     {/* <a uk-tooltip={openDict('TERMOAQUI')} className={`${artigoStyles.dictLink}`}>TERMOAQUI</a> */}
 
@@ -68,20 +54,22 @@ const Post = (props) => {
                     {/* Fim - Conteudo aqui */}  
 
                     <div className="clearfix"></div>
-                  <div className="single_tag_share">
-                    <PostHashs hashtags={post.hashtags} />
-                    {/* <PostShare related={post.related} /> */}
+                    <div className="single_tag_share">
+                      {
+                        post.hashtags && <PostHashs hashtags={post.hashtags} />
+                      }
+                      {/* <PostShare related={post.related} /> */}
+                    </div>
+                    {/* <PostRelateds  /> */}
+                    <PostAuthor author={post.author} />
+                    {/* <PostAnchorLinks /> */}
                   </div>
-                  {/* <PostRelateds  /> */}
-                  <PostAuthor author={post.author} />
-                  {/* <PostAnchorLinks /> */}
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-4" id="sidebar">
-            <PostSidebar posts={posts} />
-          </div>
+            <div className="col-md-4" id="sidebar">
+              <PostSidebar posts={posts} />
+            </div>
           </div>
         </div>
       </section>
@@ -90,11 +78,14 @@ const Post = (props) => {
 }
 
 Post.getInitialProps = async ( context ) => {
-  const postsData = await fetch('http://localhost:3000/api/posts');
+  const postsData = await fetch(`http://localhost:3000/api/posts`);
   const dicionarioData = await fetch('http://localhost:3000/api/dicionario');
   const posts = await postsData.json();
   const dicionario = await dicionarioData.json();
+  const post = posts[6];
+
   return {
+    post,
     posts,
     dicionario
   }
