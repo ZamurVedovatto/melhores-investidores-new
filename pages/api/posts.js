@@ -2,7 +2,7 @@ import posts from './posts.json'
 
 export default (req, res) => {
   let data = [];
-  console.log(req);
+  console.log(req.params);
 
   if (req.params.id) {
     let id = req.params.id;
