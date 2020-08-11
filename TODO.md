@@ -23,7 +23,7 @@ ANTES DE ABRIR AO PUBLICO
 - responsividade
 - metatags, descriptions, titles, alt nas imagens e tudo mais para o SEO
 - data dos posts
-- posts as vezes não renderizam o artigo correto
+<!-- - posts as vezes não renderizam o artigo correto -->
 
 _____
 DEPOIS DE COLOCAR EM PRODUÇÃO
