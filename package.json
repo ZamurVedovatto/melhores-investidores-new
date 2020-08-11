@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "build": "next build",
+    "dev": "node server.js",
+    "build": "npm install && next build && next start",
     "start": "next start",
     "prod": "next export"
   },
+  "postinstall": "npm run build",
   "keywords": [],
   "author": "",
   "license": "ISC",

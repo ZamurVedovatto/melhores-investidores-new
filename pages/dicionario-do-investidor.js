@@ -1,110 +1,136 @@
-import dicionarioStyles from './dicionario-do-investidor.module.scss';
-import Head from 'next/head';
-import fetch from 'isomorphic-unfetch';
-import Layout, { siteTitle } from '../components/layout';
-import { useState } from 'react';
+import dicionarioStyles from "./dicionario-do-investidor.module.scss";
+import Head from "next/head";
+import fetch from "isomorphic-unfetch";
+import Layout, { siteTitle } from "../components/layout";
+import { useState } from "react";
+import Servers from "./../constants/servers";
+const api = Servers.api;
 
 const DicionarioDoInvestidor = (props) => {
-  const { dicionario } = props;
-  const [ termos, setTermos ] = useState(dicionario);
-  const [ termoTitle, setTermoTitle] = useState('Desmitificando todos os termos do mercado financeiro');
-  const [ mainContent, setMainContent ] = useState('Selecione um termo ao lado');
-  const [ secondaryContent, setSecondaryContent ] = useState('');
+	const { dicionario } = props;
+	const [termos, setTermos] = useState(dicionario);
+	const [termoTitle, setTermoTitle] = useState(
+		"Desmitificando todos os termos do mercado financeiro"
+	);
+	const [mainContent, setMainContent] = useState("Selecione um termo ao lado");
+	const [secondaryContent, setSecondaryContent] = useState("");
 
-  const handleClick = (termo) => {
-    let title = termo.termo;
-    let main = termo.conteudo[0];
-    let secondary = termo.conteudo.slice(1, termo.conteudo.length);
-    setTermoTitle(title);
-    setMainContent(main);
-    setSecondaryContent(secondary);
-  }
+	const handleClick = (termo) => {
+		let title = termo.termo;
+		let main = termo.conteudo[0];
+		let secondary = termo.conteudo.slice(1, termo.conteudo.length);
+		setTermoTitle(title);
+		setMainContent(main);
+		setSecondaryContent(secondary);
+	};
 
-  const onKeyDown = (event) => {
-    if (event.keyCode === 8) {
-      setTermos(dicionario);
-    } else {
-      let termos = dicionario;
-      let value = event.target.value;
-      if (value !== '') {
-        let filteredTermos = termos.filter((termoLoop) => {
-          let termoName = normalizeText(termoLoop.termo);
-          return termoName.indexOf(normalizeText(value)) !== -1
-        })
-        setTermos(filteredTermos);
-      }
-    }
-  }
+	const onKeyDown = (event) => {
+		if (event.keyCode === 8) {
+			setTermos(dicionario);
+		} else {
+			let termos = dicionario;
+			let value = event.target.value;
+			if (value !== "") {
+				let filteredTermos = termos.filter((termoLoop) => {
+					let termoName = normalizeText(termoLoop.termo);
+					return termoName.indexOf(normalizeText(value)) !== -1;
+				});
+				setTermos(filteredTermos);
+			}
+		}
+	};
 
-  const normalizeText = (texto) => {
-    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  }
+	const normalizeText = (texto) => {
+		return texto
+			.normalize("NFD")
+			.replace(/[\u0300-\u036f]/g, "")
+			.toLowerCase();
+	};
 
-  return (
-    <Layout>
-      <Head>
-        <title>{siteTitle} - Dicionário das Finanças</title>
-      </Head>
-      <div className="jl_single_style8">
-        <div className="single_captions_aboves_image_full_width_wrapper" style={{ marginBottom: '30px' }}>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <section className={`${dicionarioStyles.dicionarioWrapper} row`}>
-                  <div className={`${dicionarioStyles.dicionarioList} col-md-6 `}>
-                    <form className="uk-search uk-search-default" style={{ width: '100%' }}>
-                      <span uk-search-icon="true"></span>
-                      <input className="uk-search-input" type="search" placeholder="Buscar..."
-                        onKeyDown={(e) => onKeyDown(e)}
-                      />
-                    </form>
-                    <ul className="uk-list">
-                      {
-                        termos && termos.map((termo)  =>
-                          <li key={termo.termo}>
-                            <a key={termo.termo} onClick={() => handleClick(termo)}>
-                              {termo.termo}
-                            </a>
-                          </li>
-                        )
-                      }
-                    </ul>
-                  </div>
-                  <div className={`${dicionarioStyles.dicionarioDefinicao} col-md-6`}>
-                    <div className={`${dicionarioStyles.definicaoTop}`}>
-                      <h1>{termoTitle}</h1>
-                      <span className={`${dicionarioStyles.mainInfo}`}>
-                      {mainContent}
-                      </span>
-                      {
-                        secondaryContent && secondaryContent.map((content) =>
-                          <span key={content} className={`${dicionarioStyles.secondaryInfo}`}>
-                            {content}
-                          </span>
-                        )
-                      }
-                    </div>
-                    {/* <div className={`${dicionarioStyles.definicaoLinks}`}>
+	return (
+		<Layout>
+			<Head>
+				<title>{siteTitle} - Dicionário das Finanças</title>
+			</Head>
+			<div className='jl_single_style8'>
+				<div
+					className='single_captions_aboves_image_full_width_wrapper'
+					style={{ marginBottom: "30px" }}
+				>
+					<div className='container'>
+						<div className='row'>
+							<div className='col-md-12'>
+								<section
+									className={`${dicionarioStyles.dicionarioWrapper} row`}
+								>
+									<div
+										className={`${dicionarioStyles.dicionarioList} col-md-6 `}
+									>
+										<form
+											className='uk-search uk-search-default'
+											style={{ width: "100%" }}
+										>
+											<span uk-search-icon='true'></span>
+											<input
+												className='uk-search-input'
+												type='search'
+												placeholder='Buscar...'
+												onKeyDown={(e) => onKeyDown(e)}
+											/>
+										</form>
+										<ul className='uk-list'>
+											{termos &&
+												termos.map((termo) => (
+													<li key={termo.termo}>
+														<a
+															key={termo.termo}
+															onClick={() => handleClick(termo)}
+														>
+															{termo.termo}
+														</a>
+													</li>
+												))}
+										</ul>
+									</div>
+									<div
+										className={`${dicionarioStyles.dicionarioDefinicao} col-md-6`}
+									>
+										<div className={`${dicionarioStyles.definicaoTop}`}>
+											<h1>{termoTitle}</h1>
+											<span className={`${dicionarioStyles.mainInfo}`}>
+												{mainContent}
+											</span>
+											{secondaryContent &&
+												secondaryContent.map((content) => (
+													<span
+														key={content}
+														className={`${dicionarioStyles.secondaryInfo}`}
+													>
+														{content}
+													</span>
+												))}
+										</div>
+										{/* <div className={`${dicionarioStyles.definicaoLinks}`}>
                       <button>artigos/como-criar-valor</button>
                       <button>artigos/como-criar-valor</button>
                     </div> */}
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  )
-}
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Layout>
+	);
+};
 
-DicionarioDoInvestidor.getInitialProps = async ( context ) => {
-  const data = await fetch('http://localhost:3000/api/dicionario');
-  const results = await data.json();
-  return {
-    dicionario: results
-  }
-}
+DicionarioDoInvestidor.getInitialProps = async (context) => {
+	const data = await fetch(`${api}/api/dicionario`);
+	const results = await data.json();
+	return {
+		dicionario: results,
+	};
+};
 
 export default DicionarioDoInvestidor;
