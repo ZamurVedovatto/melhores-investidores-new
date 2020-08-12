@@ -1,36 +1,38 @@
 {
-  "name": "next-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "next build",
-    "start": "next start -p $PORT",
-    "dev": "next",
-    "heroku-postbuild": "npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "antd": "^4.5.1",
-    "axios": "^0.19.2",
-    "express": "^4.17.1",
-    "history": "^5.0.0",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.4.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "sass": "^1.26.10"
-  },
-  "devDependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "next-babel-minify": "^1.0.0",
-    "next-compose-plugins": "^2.2.0",
-    "next-progressbar": "^1.0.0"
-  },
-  "engines": {
-    "node": "10.x"
-  }
+	"name": "next-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start -p $PORT"
+	},
+	"engines": {
+		"node": "10"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"antd": "^4.5.1",
+		"axios": "^0.19.2",
+		"express": "^4.17.1",
+		"history": "^5.0.0",
+		"isomorphic-unfetch": "^3.0.0",
+		"next": "^9.4.4",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.2.0",
+		"sass": "^1.26.10"
+	},
+	"devDependencies": {
+		"@zeit/next-css": "^1.0.1",
+		"next-babel-minify": "^1.0.0",
+		"next-compose-plugins": "^2.2.0",
+		"next-progressbar": "^1.0.0"
+	},
+	"engines": {
+		"node": "10.x"
+	}
 }
