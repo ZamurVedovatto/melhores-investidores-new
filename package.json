@@ -31,8 +31,5 @@
 		"next-babel-minify": "^1.0.0",
 		"next-compose-plugins": "^2.2.0",
 		"next-progressbar": "^1.0.0"
-	},
-	"engines": {
-		"node": "10.x"
 	}
 }
